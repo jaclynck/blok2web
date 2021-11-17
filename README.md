@@ -56,8 +56,11 @@ Productpagina
 <details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+### de hele homepagina: 
+<img src="images/homepageschets.png" width="375px" alt="breakdown van de hele homepagina">
+
+### de hele productpagina: 
+<img src="images/productpageschets.png" width="375px" alt="breakdown van de hele productpagina">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
