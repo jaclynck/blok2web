@@ -1,34 +1,296 @@
 <!doctype html>
 <html lang="nl">
 	
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Jaclyn Karsseboom">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>The Sill plantshop</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Jaclyn Karsseboom">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>The Sill planten webshop</title>
+		
+		<link href="styles/style.css" rel="stylesheet">
+		<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+		<link rel="stylesheet" href="https://use.typekit.net/jud4zsh.css">
+	</head>
 
-<body>
-	<header>
-		<h1>The Sill</h1>
-		<nav>
+	<body>
+		<!--Header is altijd overal hetzelfde-->
+		<header>
+			<!--target=self betekent dat de link opent in dezelfde tab-->
+			<h1><a href="index.html" target="_self">The Sill</a></h1>
+			<!--Infobar verandert steeds, ook een soort carousel-->
+			<a href="#">Order now for the holidays. Learn more.</a>
+			<a href="#">Shop our BIGGEST sale of the year.</a>
+			<a href="#">Small subscriptions are finally back in stock! Show Now.</a>
+			
+			<nav>
+				<button>Menu</button>
 
-		</nav>
-		<button>Menu</button>
-		<p>Cart (0)</p>
-	</header>
+				<!--Menu klapt uit-->
+				<button>Search</button>
+				<ul>
+					<li>
+						Shop
+					</li>
+					<li>
+						The Holiday Collection
+					</li>
+					<li>
+						New Arrivals
+					</li>
+					<li>
+						Plant Bundles
+					</li>
+					<li>
+						Sale
+					</li>
+					<li>
+						Subscriptions
+					</li>
+					<li>
+						Store Locations
+					</li>
+					<li>
+						Log In
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						Contact Us
+					</li>
+					<li>
+						Help / FAQ
+					</li>
+					<li>
+						Track Order
+					</li>
+				</ul>
+			</nav>
+			<button>Notification</button>
+			<button>Cart (0)</button>
+		</header>
 
 	<main>
+		<section>
+		<img src="images/pottedmonstera.jpg" alt="Monstera plant in a pot">
+		<img src="images/monsteracloseup.jpg" alt="Monstera plant leaves upclose">
+		<img src="images/monsterasetting.jpg" alt="Small monstera plant placed on a kitchen counter">
 		<h2>Monstera Deliciosa</h2>
 		<h3>$57</h3>
+		
+		<form>
+			<label for="planterstyle">Planter Style</label>
+			<select id="planterstyle" name="planterstylelist" form="planterstyleform">
+				<option value="acadia">
+					Acadia planter
+				</option>
+					
+				<option value="balboa">
+					Balboa planter
+				</option>
+
+				<option value="grant">
+					Grant planter
+				</option>
+
+				<option value="limited">
+					Grant Limited Edition planter
+				</option>
+
+				<option value="hyde">
+					Hyde planter
+				</option>
+
+				<option value="grow">
+					Grow Pot Only
+				</option>
+			</select>
+		</form>
+
+		<form>
+			<label for="size">Size</label>
+			<input type="radio" id="small" name="size" value="small">
+			<label for="small">Small</label>
+
+			<input type="radio" id="medium" name="size" value="medium">
+			<label for="medium">Medium</label>
+		</form>
+
+		<form>
+			<label for="color">Planter Color</label>
+			<input type="radio" id="black" name="color" value="black">
+			<label for="black">Black</label>
+
+			<input type="radio" id="blush" name="color" value="peach">
+			<label for="blush">Blush</label>
+			
+			<input type="radio" id="cream" name="color" value="cream">
+			<label for="cream">Cream</label>
+
+			<input type="radio" id="mint" name="color" value="mint">
+			<label for="mint">Mint</label>
+
+			<input type="radio" id="terracotta" name="color" value="terracotta">
+			<label for="terracotta">Terracotta</label>
+		</form>
+
+		<button type="button">$57 - Add to Cart</button>
+		<a href="#">Unlock 20% Off Your Order</a>
+	</section>
+
+		<section>
+		<h3>Details</h3>
+		
+		<p>
+			Nicknamed the “swiss cheese plant”, the Monstera deliciosa is famous for its quirky natural leaf holes. These holes are theorized to maximize sun fleck capture on the forest floor. Depending on the season and maturity of the plant, your Monstera could arrive with no holes just yet, and be sized to grow alongside you. 
+		</p>
+			<details>
+				<summary>+ More Details</summary>
+				<ul>
+					<li>
+						Arrives in a nursery grow pot nestled in the planter
+					</li>
+					<li>
+						Choice of small (5" diam) or medium (7" diam)
+					</li>
+					<li>
+						Grow pot only measures 4" in diameter for small and 6" for medium
+					</li>
+					<li>
+						Acadia is porcelain; has a drainage hole and plug
+					</li>
+					<li>
+						Balboa, Grant and Hyde are ceramic; Hyde comes with drainage saucer
+					</li>
+					<li>
+						Upcycled is made with recycled plastic; has a drainage hole and plug
+					</li>
+					<li>
+						Limited Edition Grant has a removable drainage plug
+					</li>
+				</ul>
+			</details>
+		</section>
+
+		<section>
+			<ul>
+				<li>
+					Bright indirect to medium light
+				</li>
+
+				<li>
+					Water every 1-2 weeks
+				</li>
+
+				<li>
+					<a href="https://www.thesill.com/blogs/plants-101/how-to-care-for-monstera-monstera-deliciosa">View our Plant Care Guide</a>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>You Might Like</h2>
+			<article>
+				<a href="product.html" target="_self">
+					<h3>Monstera Deliciosa</h3>
+					<p>$33-$67</p>
+					<p>more options</p>
+					<img src="images/pottedmonstera.jpg" alt=:" Monstera plant in a pot">
+				</a>
+			</article>
+
+			<article>
+				<a href="product.html" target="_self">
+					<h3>Aglaonema Wishes</h3>
+					<p>$28-$67</p>
+					<p>more options</p>
+					<img src="images/aglaonema.jpg" alt=:" Aglaonema plant in a pot">
+				</a>
+			</article>
+
+			<article>
+				<a href="product.html" target="_self">
+					<h3>Large Bird of Paradise</h3>
+					<p>$85</p>
+					<p>one size</p>
+					<img src="images/birdofparadise.jpg" alt=:" Bird of Paradise plant in a pot">
+				</a>
+			</article>
+
+			<article>
+				<a href="product.html" target="_self">
+					<h3>Parlor Palm</h3>
+					<p>$23-$67</p>
+					<p>more options</p>
+					<img src="images/parlorpalm.jpg" alt=:" Parlor Palm plant in a pot">
+				</a>
+			</article>
+		</section>
+
+		<section>
+			<h2>
+				Taking Care of a Monstera Deliciosa
+			</h2>
+			<"https://www.youtube.com/watch?v=onWi59jZXmI">
+		</section>
+
+		<section>
+			<h2>Plant Bio</h2>
+			<p>
+
+Monstera deliciosa is a species of evergreen tropical vine that is a part of Araceae, the aroid family. Native to the Tropical Americas, it is one of the few aroids which produces edible fruit, hence the species epithet deliciosa. However, it's incredibly rare that a Monstera will flower or produce fruit indoors. Instead, this plant is famous for its beautiful broad green leaves with natural leaf-holes, called fenestrations, which have led to the rise of its nickname, ‘swiss cheese plant’. These holes are theorized to maximize sun fleck capture on the forest floor by increasing the spread of the leaf while decreasing the mass of leaf cells to support.
+			</p>
+			<a href="https://www.thesill.com/blogs/plants-101/how-to-care-for-monstera-monstera-deliciosa">Learn more</a>
+		</section>
+
+		<section>
+			<h2>
+				From the Blog
+			</h2>
+
+			<article>
+				<a href="https://www.thesill.com/blogs/plants-101/seasonal-care-fall">
+				<h3>
+					Fall Plant Care Tips and Tricks
+				</h3>
+				<p>
+					PLANTS 101
+				</p>
+				<img src="images/falltips.jpg" alt="a few potted plants placed in a living space">
+				</a>
+			</article>
+
+			<article>
+				<a href="https://www.thesill.com/blogs/diy/best-plants-office">
+				<h3>
+					Top 5 Plants for Your Home Office 
+				</h3>
+				<p>
+					DESIGN TIPS
+				</p>
+				<img src="images/office.jpg" alt="multiple potted plants placed in a home office">
+				</a>
+			</article>
+
+			<article>
+				<a href="https://www.thesill.com/blogs/plants-101/plant-care-for-large-plants">
+				<h3>
+					Plant Care for Large Plants
+				</h3>
+				<p>
+					PLANTS 101
+				</p>
+				<img src="images/large.png" alt="large potted plants placed in a bedroom">
+				</a>
+			</article>
+		</section>
+
 	</main>
 
 	<footer>
 		<section>
+			<!--Eerste kolom-->
 			<ul>
 				<li>FAQ</li>
 				<li>Shipping Info</li>
@@ -38,6 +300,7 @@
 				<li>Reward Program</li>
 			</ul>
 
+			<!--Tweede kolom-->
 			<ul>
 				<li>Plant Swap</li>
 				<li>Workshops</li>
@@ -50,16 +313,33 @@
 
 		<section>
 			<h2>Get the dirt.</h2>
-			<form></form>
-			<button>Subscribe</button>
+			<form>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="Enter your email here" required>
+				<button type="submit">Subscribe</button>
+			</form>
 		</section>
 
 		<section>
 			<p>Copyright 2021 The Sill, Inc.</p>
-			<p>Terms of Use</p>
-			<p>Privacy Policy</p>
-			<p>Accessibility Statement</p>
-			<p>Do Not Sell My Information</p>
+			
+			<ul>
+				<li>
+					<a href="#">Terms of Use</a>
+				</li>
+
+				<li>
+					<a href="#">Privacy Policy</a>
+				</li>
+
+				<li>
+					<a href="#">Accessibility Statement</a>
+				</li>
+
+				<li>
+					<a href="#">Do Not Sell My Information</a>
+				</li>
+			</ul>
 		</section>
 	</footer>
 

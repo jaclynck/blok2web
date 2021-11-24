@@ -82,6 +82,10 @@ Productpagina
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+-dit ging goed- Mijn HTML tot nu toe is netjes en goed leesbaar. Ik heb verschillende elementen in mijn code staan, zoals lists, input forms en select forms. Ik heb de bronnen van hoe ik deze correct moest coderen opgeslagen in de bronnenlijst.
+
+-dit was lastig- Ik vind het spannend om mijn werk te laten zien aan anderen en ik ben bang dat ik niet ver genoeg ben gekomen. Ik heb wat moeite met op gang komen als het gaat om waar ik moet beginnen met CSS.
+
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -235,8 +239,11 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. bron 1 - comments in html: https://html.com/tags/comment-tag/
+2. bron 2 - image tag: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML
+3. bron 3 - links, inputs en buttons: https://www.youtube.com/watch?v=bFvjE4ZRtSE&list=PLZlA0Gpn_vH9xx-RRVNG187ETT2ekWFsq&index=9
+4. bron 4 - input type select: https://www.w3schools.com/tags/att_select_form.asp
+5. bron 5 - radio buttons: https://www.w3schools.com/html/html_forms.asp 
+6. bron 6 - font: https://fonts.adobe.com/fonts/tenez?mv=affiliate&mv2=red
 
 </details>
