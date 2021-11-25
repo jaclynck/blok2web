@@ -6,25 +6,19 @@
 /* Custom properties */
 :root {
   --main-color: #00ab84;
-  --background-color: #e6f6f3;
-  --highlight-color: ;
-
-  --p-color: #2d2a24;
+  --green-background-color: #e6f6f3;
   /* achtergrondkleur You Might Like section productpage*/
-  --p-background-color: #f8f8f7;
+  --grey-background-color: #f8f8f7;
+  /* achtergrondkleur header*/
+  --beige-background-color: #FAF2EC;
+  
+  --text-color: #2d2a24;
+  /* more options link bij productoverzicht */
+  --accent-color: #7d7a75;
 
   --button-color: white;
   --button-background-color: #00ab84;
 
-  /* more options link bij productoverzicht */
-  --accent-color: #7d7a75;
-  --accent-background-color: ;
-
-  /* states */
-  --a-focus-color: darkseagreen;
-  --active-color: salmon; 
-  --visited-color: slateblue;
-  --button-focus-color: rgb(0, 182, 173);
 }
 /* Algemene stijlen + HTML en Body */
 html {
@@ -39,12 +33,14 @@ body {
 }
 
  img {
-   width: 400px;
+   width: 30em;
  }
 
  /* Header */
  header {
-
+    background-color: var(--green-background-color);
+    position: relative;
+    padding: 1em;
  }
 
  nav {
@@ -59,13 +55,33 @@ body {
 
  }
 
- a {
-   
- }
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 2em;
+  font-weight:600;
+  color: var(--text-color);
+  text-decoration: underline;
+  letter-spacing: 0.01em;
+
+}
 
  /* Footer */
 
  /* Main */
+
+ main section:first-of-type {
+    position: relative;
+    padding: 1em;
+ }
+
+ main h2 {
+   font-family: 'Tenez', Helvetica, Arial, sans-serif;
+   font-size: 42px;
+ }
 
  /* Section 1: banner */
 

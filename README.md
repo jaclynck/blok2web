@@ -22,7 +22,7 @@ Jaclyn Karsseboom
 Blauwe piste
 
 #### Je focus:
-Responsive
+Responsive?
  
 </details>
 
@@ -85,6 +85,12 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 -dit ging goed- Mijn HTML tot nu toe is netjes en goed leesbaar. Ik heb verschillende elementen in mijn code staan, zoals lists, input forms en select forms. Ik heb de bronnen van hoe ik deze correct moest coderen opgeslagen in de bronnenlijst.
 
 -dit was lastig- Ik vind het spannend om mijn werk te laten zien aan anderen en ik ben bang dat ik niet ver genoeg ben gekomen. Ik heb wat moeite met op gang komen als het gaat om waar ik moet beginnen met CSS.
+
+### voortgang 1 homepagina: 
+<img src="images/voortgang1home.png" width="375px" alt="homepagina met alleen html">
+
+### voortgang 1 productpagina: 
+<img src="images/voortgang1product.png" width="375px" alt="productpagina met alleen html">
 
 
 ### Agenda voor meeting
@@ -245,5 +251,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 4. bron 4 - input type select: https://www.w3schools.com/tags/att_select_form.asp
 5. bron 5 - radio buttons: https://www.w3schools.com/html/html_forms.asp 
 6. bron 6 - font: https://fonts.adobe.com/fonts/tenez?mv=affiliate&mv2=red
+7. bron 7 - video in html: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video en https://www.w3schools.com/html/html_youtube.asp 
 
 </details>
