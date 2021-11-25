@@ -43,6 +43,18 @@ body {
     padding: 1em;
  }
 
+ header p {
+   background-color: var(--main-color);
+   color: white;
+
+   position: absolute;
+   top:0;
+   left:0;
+   right:0;
+   padding:.5em;
+   margin:0 0 1em 0;
+ }
+
  nav {
 
  }
@@ -75,7 +87,11 @@ h1 {
 
  main section:first-of-type {
     position: relative;
-    padding: 1em;
+    
+ }
+
+ main section:first-of-type img {
+   
  }
 
  main h2 {
