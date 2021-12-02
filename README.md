@@ -63,10 +63,10 @@ Productpagina
 <img src="images/productpageschets.png" width="375px" alt="breakdown van de hele productpagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/cart.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -106,10 +106,13 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Een paragraph in een anchor is dubbelop.
+- De call to action knop moet een link zijn, geen button. Buttons zijn meer voor een form submitten en links leiden naar een andere pagina.
+- Hamburger menu uit laten klappen is complex, google hamburger menu en ga de voorbeelden namaken.
+- Zet de producten en het about gedeelte in UL's i.p.v. articles: dan wordt er al een beetje styling voor jou gedaan.
+- List in flexbox aanpassen naar de gewenste layout: CSS tricks website bekijken.
+- Afbeeldingen zet je naast elkaar in grid.
+- Voor nu is het gebruik van classes oke, maar voor het eindgesprek moet je zoveel mogelijk CSS selectors hebben.
 
 </details>
 
@@ -125,6 +128,15 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+-dit ging goed- Mijn HTML heb ik wat netter gemaakt en ik heb alle afbeeldingen toegevoegd. Grid is gelukt in het productenoverzicht op de homepage. Bronnen bewaard in de bronvermelding.
+
+-dit was lastig- Ik vond het lastig om te beginnen met CSS. Mijn tweede pagina is nu door de war doordat ik de CSS heb gemaakt met de hoofdpagina in gedachte: ik weet niet hoe dat moet (moet ik dan met classes werken?). Daarnaast lukt het niet om de buttons kan stylen. Lastig om het hamburger menu te maken en het menu met flexbox naast elkaar te zetten.
+
+### voortgang 2 homepagina: 
+<img src="images/voortgang2home.png" width="375px" alt="homepagina met een begin aan CSS">
+
+### voortgang 2 productpagina: 
+<img src="images/voortgang2product.png" width="375px" alt="productpagina door de war">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -254,6 +266,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 7. bron 7 - video in html: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video en https://www.w3schools.com/html/html_youtube.asp 
 8. bron 8 - button voor screen readers: https://codepen.io/jaclynck-the-typescripter/pen/VwMwVqX 
 9. bron 9 - forms stylen: https://www.w3schools.com/css/css_form.asp
+10. bron 10 - styling input buttons: https://www.w3schools.com/css/css_form.asp 
 
 bron  - uitklapbare hamburger menu https://codepen.io/jaclynck-the-typescripter/pen/VwMwVqX  
 

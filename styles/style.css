@@ -59,13 +59,7 @@ body {
 /************/
 header > a:first-of-type {
   line-height:1;
-  font-weight:bold;
   justify-self:center;
-}
-
-button {
-  font:inherit;
-  cursor:pointer;
 }
 
 h1 a {
@@ -91,19 +85,45 @@ h2 {
   text-decoration: none;
   font-size: 3rem;
   line-height: 4rem; 
+
   padding-left: 2rem;
   max-width: 30rem;
   margin-top: 5rem;
   margin-bottom: 0;
 }
 
-.cta {
-  background-color: var(--main-color);
-  color: white;
-  padding: 1rem 1.2rem;
-  border-radius: 0.2rem;
-  margin: 40px;
+a {
+  text-decoration: none;
+  font-size: 1rem;
   font-weight: normal;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline; 
+}
+
+.cta {
+  padding: 1rem 1.2rem;
+  margin: 0 0 0 40px;
+
+  background-color: var(--main-color);
+  color: var(--button-color);
+
+  display:inline-block;
+  position:relative;
+  border: none;
+  border-radius:.3rem;
+  box-sizing: border-box;
+
+  text-decoration:none;
+  text-align:center;
+  font-family:'tenez', helvetica, roboto, arial, sans-serif;
+  font:inherit;
+  font-weight: normal;
+
+  box-shadow:inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
+  cursor:pointer;
 }
 
 .cta:hover {
@@ -113,7 +133,7 @@ h2 {
 
 header section p {
   padding-left: 40px;
-  padding-bottom: 20px;;
+  padding-bottom: 10px;
   font-size: 1.2rem;
 }
 
@@ -122,33 +142,45 @@ header section p {
   top: 0;
   bottom: 0;
   padding: 0.5rem 1rem;
+
   text-align: center;
   display: inline-block;
   background-color: #00ab84;
   color: white;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: normal; 
 }
-
-a {
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-a:hover {
-  cursor: pointer;
-  text-decoration: underline; 
-}
-
-
- /* Main */
 
 nav {
   padding-left: 2rem;
   max-width: 30rem;
   margin-bottom: 0;
 }
+
+nav button {
+  background-color: var(--button-color);
+  color: var(--main-color);
+
+  padding: .5rem 1rem;
+  margin:0 .5rem .5rem 0;
+
+  display:inline-block;
+  position:relative;
+  border: none;
+  border-radius:.3rem;
+  box-sizing: border-box;
+
+  text-decoration:none;
+  text-align:center;
+  font-family:'tenez', helvetica, roboto, arial, sans-serif;
+  font:inherit;
+  font-weight:bold;
+
+  box-shadow:inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
+  cursor:pointer;
+}
+
+ /* Main */
 
 img {
    width: 18rem;
@@ -215,6 +247,7 @@ main section:last-of-type {
   padding-left: 2rem;
   max-width: 30rem;
   margin-bottom: 0;
+  margin-right: 2rem;
 }
 
 main section:last-of-type h2 {
@@ -228,6 +261,8 @@ main section:last-of-type h3 {
 main section:last-of-type img {
   width: 4rem;
 }
+
+
 
 /* Productpagina */
 select {
@@ -249,6 +284,12 @@ footer {
 
 footer h2 {
   padding-left: 0rem;
+  margin-top: 2rem;
+}
+
+footer img {
+  width: 100%;
+  margin-top: 1rem;
 }
 
 footer input {
@@ -260,6 +301,9 @@ footer input {
   border-radius: 4px;
   display: block;
   transition:.2s;
+  font-family: 'tenez', helvetica, roboto, arial, sans-serif;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 footer input:focus {
@@ -281,4 +325,26 @@ footer form input[type=button], input[type=submit] {
   margin: 4px 2px;
   cursor: pointer;
   width: 100%;
+}
+
+footer button {
+  background-color: var(--main-color);
+  color: var(--button-color);
+
+  padding: .8rem 1.2rem;
+  margin:0 .5rem .5rem 0;
+
+  display:inline-block;
+  position:relative;
+  border: none;
+  border-radius:.3rem;
+  box-sizing: border-box;
+
+  text-decoration:none;
+  text-align:center;
+  font-family:'tenez', helvetica, roboto, arial, sans-serif;
+  font:inherit;
+
+  box-shadow:inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
+  cursor:pointer;
 }
