@@ -252,5 +252,9 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 5. bron 5 - radio buttons: https://www.w3schools.com/html/html_forms.asp 
 6. bron 6 - font: https://fonts.adobe.com/fonts/tenez?mv=affiliate&mv2=red
 7. bron 7 - video in html: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video en https://www.w3schools.com/html/html_youtube.asp 
+8. bron 8 - button voor screen readers: https://codepen.io/jaclynck-the-typescripter/pen/VwMwVqX 
+9. bron 9 - forms stylen: https://www.w3schools.com/css/css_form.asp
+
+bron  - uitklapbare hamburger menu https://codepen.io/jaclynck-the-typescripter/pen/VwMwVqX  
 
 </details>
