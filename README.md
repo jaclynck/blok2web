@@ -151,10 +151,11 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- De tweede HTML pagina in CSS aanroepen door een class te gebruiken in de body van de productpagina (section:nth-of-type(2) {}). 
+- Menu elementen naast elkaar zetten met behulp van flexbox (kijken naar codepen oefeningen met responsive menuutjes). 
+- Buttons stylen in de states. 
+- Een werkende carousel (sliden door productfoto's op de tweede pagina) is bijzaak en niet verplicht (overflow x-scroll —> div waar plaatjes instaan die buiten het scherm vallen, dan kan je heen er weer scrollen door de afbeeldingen). 
+- Read me verslag moet aangevuld worden voor het eindgesprek.
 
 </details>
 
@@ -267,6 +268,9 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 8. bron 8 - button voor screen readers: https://codepen.io/jaclynck-the-typescripter/pen/VwMwVqX 
 9. bron 9 - forms stylen: https://www.w3schools.com/css/css_form.asp
 10. bron 10 - styling input buttons: https://www.w3schools.com/css/css_form.asp 
+11. bron 11 - button styling: https://fdossena.com/?p=html5cool/buttons/i.frag 
+12. bron 12 - color input types, range input types en optgroup: https://www.youtube.com/watch?v=AryZSCeKU9Y&list=WL&index=38&t=8s 
+13. bron 13 - scroll to bottom met id tag: https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html
 
 bron  - uitklapbare hamburger menu https://codepen.io/jaclynck-the-typescripter/pen/VwMwVqX  
 

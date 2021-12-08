@@ -3,7 +3,10 @@
   box-sizing: border-box;  
 }
 
+/*********************/
 /* Custom properties */
+/*********************/
+
 :root {
   --main-color: #00ab84;
   --green-background-color: #e6f6f3;
@@ -16,7 +19,9 @@
   --button-color: #fff;
 }
 
+/***********************************/
 /* Algemene stijlen + HTML en Body */
+/***********************************/
 
 html {
   scroll-behavior: smooth;
@@ -37,9 +42,11 @@ body {
   grid-template-areas: 'header' 'section' 'footer';
 }
 
- /* Header */
+/*********************/
+/* Header */
+/*********************/
 
-.banner {
+body header {
   background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/files/greens-and-anthuriums_mobile_1278x.jpg?v=1617640574);
   background-size: cover;
     
@@ -53,22 +60,20 @@ body {
   grid-area: header;
 }
 
+/* Logo */
 
-/************/
-/* het logo */
-/************/
 header > a:first-of-type {
   line-height:1;
   justify-self:center;
 }
 
 h1 a {
-  font-family: 'tenez', helvetica, roboto, arial, sans-serif;
+  font-family: 'tenez', helvetica, arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 2rem;
   font-weight: bold;
-  color: var(--text-color);
+  color: var(--button-color);
   text-decoration: underline;
 }
 
@@ -78,7 +83,7 @@ h1 a:hover {
 }
 
 h2 {
-  font-family: 'tenez', helvetica, roboto, arial, sans-serif;
+  font-family: 'tenez', helvetica arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: var(--text-color);
@@ -88,7 +93,7 @@ h2 {
 
   padding-left: 2rem;
   max-width: 30rem;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 0;
 }
 
@@ -103,40 +108,49 @@ a:hover {
   text-decoration: underline; 
 }
 
-.cta {
+header section:nth-of-type(2) a {
   padding: 1rem 1.2rem;
-  margin: 0 0 0 40px;
+  margin: 0 0 0 2rem;
+  width: 25%;
 
   background-color: var(--main-color);
   color: var(--button-color);
 
-  display:inline-block;
-  position:relative;
+  display: inline-block;
+  position: relative;
   border: none;
   border-radius:.3rem;
   box-sizing: border-box;
 
-  text-decoration:none;
   text-align:center;
-  font-family:'tenez', helvetica, roboto, arial, sans-serif;
-  font:inherit;
+  font-family:'Tenez', helvetica, roboto, arial, sans-serif;
+  font: inherit;
   font-weight: normal;
 
   box-shadow:inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
   cursor:pointer;
 }
 
-.cta:hover {
+header section:nth-of-type(2) a:hover {
   background-color: lightseagreen;
   text-decoration: none;
+  font-weight: bold;
+}
+
+header section:nth-of-type(2) a:focus {
+  background-color: lightseagreen;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
+  cursor:pointer;
 }
 
 header section p {
-  padding-left: 40px;
-  padding-bottom: 10px;
+  padding-left: 2rem;
   font-size: 1.2rem;
 }
 
+/*
 .infobar {
   width: 100%;
   top: 0;
@@ -149,12 +163,21 @@ header section p {
   color: white;
   text-decoration: none;
   font-weight: normal; 
-}
+}*/
 
 nav {
-  padding-left: 2rem;
-  max-width: 30rem;
+  display: flex;
+  padding-left: 1rem;
   margin-bottom: 0;
+
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--main-color);
+
+  position: fixed;
+  top: 1;
+  width: 100%;
+  z-index: 3;
 }
 
 nav button {
@@ -162,7 +185,7 @@ nav button {
   color: var(--main-color);
 
   padding: .5rem 1rem;
-  margin:0 .5rem .5rem 0;
+  margin: auto;
 
   display:inline-block;
   position:relative;
@@ -170,17 +193,41 @@ nav button {
   border-radius:.3rem;
   box-sizing: border-box;
 
-  text-decoration:none;
-  text-align:center;
-  font-family:'tenez', helvetica, roboto, arial, sans-serif;
-  font:inherit;
+  text-align:c enter;
+  font-family: 'Tenez', helvetica, arial, sans-serif;
+  font: inherit;
   font-weight:bold;
+  text-align: center;
+  justify-content: center;
 
   box-shadow:inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
-  cursor:pointer;
+  cursor: pointer;
 }
 
- /* Main */
+nav button:hover {
+  background: var(--grey-background-color);
+}
+
+nav button:focus {
+  box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
+}
+
+nav h1 {
+  order: 1;
+  color:var(--button-color);
+}
+
+nav button:nth-of-type(2) {
+  order: 2;
+}
+
+/**************************/
+/* DIT IS DE MAIN CONTENT */
+/**************************/
+
+main section:first-of-type h3 {
+  padding-left: 2rem;
+}
 
 img {
    width: 18rem;
@@ -230,7 +277,7 @@ main section:first-of-type a {
 
 main section:first-of-type a:hover {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 h3 {
@@ -252,6 +299,8 @@ main section:last-of-type {
 
 main section:last-of-type h2 {
   padding-left: 0rem;
+  padding-top: 0rem;
+  margin-top: 2rem;
 }
 
 main section:last-of-type h3 {
@@ -262,24 +311,15 @@ main section:last-of-type img {
   width: 4rem;
 }
 
-
-
-/* Productpagina */
-select {
-  width: 100%;
-  padding: 16px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: #f1f1f1;
-}
-
-
-/* Footer */
+/*****************************/
+/* Footer met subscribe form */
+/*****************************/
 
 footer {
   grid-area: footer;
   background-color: var(--grey-background-color);
   padding: 2rem;
+  margin-bottom: 0;
 }
 
 footer h2 {
@@ -332,19 +372,350 @@ footer button {
   color: var(--button-color);
 
   padding: .8rem 1.2rem;
-  margin:0 .5rem .5rem 0;
+  margin: .5rem .5rem .5rem 0;
+  width: 100%;
 
   display:inline-block;
   position:relative;
+
   border: none;
   border-radius:.3rem;
   box-sizing: border-box;
 
-  text-decoration:none;
-  text-align:center;
-  font-family:'tenez', helvetica, roboto, arial, sans-serif;
-  font:inherit;
+  text-align: center;
+  font-family:'Tenez', helvetica, roboto, arial, sans-serif;
+  font: inherit;
+  font-weight: normal;
 
-  box-shadow:inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
+  box-shadow: inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
   cursor:pointer;
 }
+
+footer button:hover {
+  background: lightseagreen;
+  font-weight: bold;
+}
+
+footer button:focus {
+  background-color: lightseagreen;
+  text-decoration: none;
+  box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
+  cursor:pointer;
+}
+
+footer button:nth-of-type(2) {
+  background-color: var(--button-color);
+  color: var(--main-color);
+
+  padding: .8rem 1.2rem;
+  margin: 0 .5rem .5rem 0;
+
+  display: inline-block;
+  position:relative;
+  border: 1px solid var(--grey-background-color);
+  border-radius:.3rem;
+  box-sizing: border-box;
+
+  text-align: center;
+  font-family: 'Tenez', helvetica, roboto, arial, sans-serif;
+  font: inherit;
+  font-weight: normal;
+
+  box-shadow:inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
+  cursor: pointer;
+}
+
+footer button:nth-of-type(2):hover {
+  background: lightgrey;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+footer button:nth-of-type(2):focus {
+  background-color: lightgrey;
+  text-decoration: none;
+  color: var(--accent-color);
+  box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
+  cursor:pointer;
+}
+
+
+/***************************************/
+/* Productpagina van de Monstera plant */
+/***************************************/
+
+/* Product foto's */
+
+.product header {
+  background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_monstera_variant_medium_grant_black_587b36b4-4304-47f4-924e-b0bb4dfb0090_1024x.jpg?v=1611287458);
+  background-size: cover;
+    
+  margin: 0;
+  padding: 0; 
+
+  width: 100%;
+  max-height: calc(100vh - 10em);
+  min-height: 45em;
+}
+
+.product main section:first-of-type h3 {
+  padding-left: 0;
+}
+
+/* Formulieren */
+
+/*.product form {
+  display: flex;
+}*/
+
+.product form {
+  margin-top: 1rem;
+}
+
+.product form label:first-of-type {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.product form input {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.product select {
+  display: block;
+  width: 50%;
+  padding: 1rem;
+
+  border: 2px solid var(--text-color);
+  border-radius: 4px;
+
+  background-color: var(--button-color);
+
+  transition: .5s;
+}
+
+.product select:focus {
+  width: 100%;
+
+  border: 4px solid var(--main-color);
+  border-radius: 4px;
+
+  background-color: var(--green-background-color);
+}
+
+
+
+.product main button {
+  background-color: var(--main-color);
+  color: var(--button-color);
+
+  padding: .8rem 1.2rem;
+  margin: .5rem .5rem .5rem 0;
+  width: 100%;
+
+  display:inline-block;
+  position:relative;
+
+  border: none;
+  border-radius:.3rem;
+  box-sizing: border-box;
+
+  text-align: center;
+  font-family:'Tenez', helvetica, roboto, arial, sans-serif;
+  font: inherit;
+
+  box-shadow: inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
+  cursor:pointer;
+}
+
+.product main section:first-of-type a {
+  color: var(--main-color);
+  font-weight: normal;
+  text-decoration: underline;
+  justify-self: center;
+}
+
+/* Details */
+
+.product main section:nth-of-type(2) {
+  padding-top: 2rem;
+  max-width: 30rem;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.product main section:nth-of-type(2) ul{
+  list-style-type: none;
+}
+
+.product main section:nth-of-type(2) h2 {
+  padding-left: 0rem;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product main section:nth-of-type(2) h3 {
+  padding-left: 0rem;
+  padding-top: 2rem;
+}
+
+.product main section:nth-of-type(2) img {
+  width: 2.5rem;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+}
+
+/* Toggle More Details */
+
+.product main section:nth-of-type(2) details {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.product main section:nth-of-type(2) summary {
+  display: flex;
+}
+
+.product main section:nth-of-type(2) li {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+/* You Might Like these other products */
+
+.product main section:nth-of-type(3) ul {
+  list-style-type: none;
+
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap: 1rem;
+  justify-content: center;
+  padding: 0rem;
+}
+
+.product main section:nth-of-type(3) li img {
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.product main section:nth-of-type(3) p {
+  font-weight: normal;
+  color: var(--accent-color);
+}
+
+.product main section:nth-of-type(3) a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.product main section:nth-of-type(3) a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.product main {
+  padding: 0 2rem 0 2rem;
+}
+
+.product h2,h3 {
+  padding: 0rem;
+}
+
+
+/*
+.product p {
+  font-size: 1.2rem;
+}*/
+
+/* Video */
+
+.product iframe {
+  width: 100%;
+  height: 20rem;
+}
+
+/* Plant Bio */
+
+.product main section:nth-of-type(5) a {
+  background-color: var(--button-color);
+  color: var(--accent-color);
+
+  padding: .8rem 1.2rem;
+  margin: .5rem .5rem .5rem 0;
+  width: 100%;
+
+  display: inline-block;
+  position: relative;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 0rem;
+  box-sizing: border-box;
+
+  text-align: center;
+  font-family:'Tenez', helvetica, roboto, arial, sans-serif;
+  font: inherit;
+
+  cursor:pointer;
+
+  transition: .2s;
+}
+
+.product main section:nth-of-type(5) a:hover {
+  background-color: var(--grey-background-color);
+  color: var(--text-color);
+
+  border: 3px solid var(--text-color);
+  border-radius:.5rem;
+
+}
+
+/* Blog */
+
+.product main section:last-of-type {
+  padding: 0rem;
+}
+
+.product main section:last-of-type ul {
+  list-style-type: none;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  justify-content: center;
+  padding: 0rem;
+  margin-right: 0;
+}
+
+.product main section:last-of-type li img {
+  padding: 0rem;
+  width: 100%;
+  height: auto;
+}
+
+.product main section:last-of-type h3 {
+  font-family: 'tenez', helvetica, roboto, arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 2rem; 
+
+  max-width: 50rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.product main section:last-of-type p {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1rem; 
+} 

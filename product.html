@@ -13,19 +13,18 @@
 		<link rel="stylesheet" href="https://use.typekit.net/jud4zsh.css">
 	</head>
 
-	<body>
+	<body class="product">
 		<header>
+			<!--<a href="#" class="infobar">Shop our new plant bundles expertly paired for your space</a>-->
+					
 			<section>
-				<a href="#" class="infobar">Shop our new plant bundles expertly paired for your space</a>
-			
-				<h1>
-					<a href="index.html" target="_self">The Sill</a>
-				</h1>
-			</section>
-			
-						<!-- het menu -->
-						<nav>
-							<button aria-hidden="true">Menu</button>
+				
+					<!-- het menu -->
+					<nav>
+						<h1>
+							<a href="index.html" target="_self">The Sill</a>
+						</h1>
+						<button aria-hidden="true">Menu</button>
 							<!--
 								<ul>
 									<li>
@@ -77,82 +76,92 @@
 									</li>
 								</ul>
 								-->
-							<button>Cart</button>
-						</nav>
-	
-				</section>
+						<button>Cart</button>
+					</nav>
+
+			</section>
 		</header>
 
 
 	<main>
 		<section>
-		<img src="images/pottedmonstera.jpg" alt="Monstera plant in a pot">
-		<img src="images/monsteracloseup.jpg" alt="Monstera plant leaves upclose">
-		<img src="images/monsterasetting.jpg" alt="Small monstera plant placed on a kitchen counter">
+			<!--<img src="images/pottedmonstera.jpg" alt="Monstera plant in a pot">
+			<img src="images/monsteracloseup.jpg" alt="Monstera plant leaves upclose">
+			<img src="images/monsterasetting.jpg" alt="Small monstera plant placed on a kitchen counter">-->
 		<h2>Monstera Deliciosa</h2>
-		<h3>$57</h3>
+		<h3>$27</h3>
 		
 		<form>
 			<label for="planterstyle">Planter Style</label>
 			<select id="planterstyle" name="planterstylelist" form="planterstyleform">
-				<option value="acadia">
-					Acadia planter
-				</option>
-					
-				<option value="balboa">
-					Balboa planter
-				</option>
+				<optgroup label="Standard Styles">
+					<option value="acadia">
+						Acadia planter
+					</option>
+						
+					<option value="balboa">
+						Balboa planter
+					</option>
 
-				<option value="grant">
-					Grant planter
-				</option>
+					<option value="hyde">
+						Hyde planter
+					</option>
+				</optgroup>
 
-				<option value="limited">
-					Grant Limited Edition planter
-				</option>
+				<optgroup label="Grant Styles">
+					<option value="grant">
+						Grant Basic planter
+					</option>
+				
 
-				<option value="hyde">
-					Hyde planter
-				</option>
+					<option value="limited">
+						Grant Limited Edition planter
+					</option>
+				</optgroup>
 
-				<option value="grow">
-					Grow Pot Only
-				</option>
+				<optgroup label="No Extra Planter">
+					<option value="grow">
+						Grow Pot Only
+					</option>
+				</optgroup>
 			</select>
 		</form>
 
 		<form>
 			<label for="size">Size</label>
-			<input type="radio" id="small" name="size" value="small">
+			<input type="radio" id="small" name="size">
 			<label for="small">Small</label>
 
-			<input type="radio" id="medium" name="size" value="medium">
+			<input type="radio" id="medium" name="size">
 			<label for="medium">Medium</label>
+
+			<input type="radio" id="large" name="size">
+			<label for="large">Large</label>
 		</form>
 
 		<form>
 			<label for="color">Planter Color</label>
-			<input type="radio" id="black" name="color" value="black">
+			<input type="radio" id="black" name="color">
 			<label for="black">Black</label>
 
-			<input type="radio" id="blush" name="color" value="peach">
+			<input type="radio" id="blush" name="color">
 			<label for="blush">Blush</label>
 			
-			<input type="radio" id="cream" name="color" value="cream">
+			<input type="radio" id="cream" name="color">
 			<label for="cream">Cream</label>
 
-			<input type="radio" id="mint" name="color" value="mint">
+			<input type="radio" id="mint" name="color">
 			<label for="mint">Mint</label>
 
-			<input type="radio" id="terracotta" name="color" value="terracotta">
+			<input type="radio" id="terracotta" name="color">
 			<label for="terracotta">Terracotta</label>
 		</form>
 
-		<button type="button">$57 - Add to Cart</button>
-		<a href="#">Unlock 20% Off Your Order</a>
+		<button type="button">Add to Cart</button>
+		<a href="#discount">Unlock 20% Off Your Order</a>
 	</section>
 
-		<section>
+	<section>
 		<h3>Details</h3>
 		
 		<p>
@@ -162,83 +171,64 @@
 				<summary>+ More Details</summary>
 				<ul>
 					<li>
-						Arrives in a nursery grow pot nestled in the planter
+						<img src="images/light.svg">
+						Bright indirect to medium light
 					</li>
+	
 					<li>
-						Choice of small (5" diam) or medium (7" diam)
+						<img src="images/water.svg">
+						Water every 1-2 weeks
 					</li>
+	
 					<li>
-						Grow pot only measures 4" in diameter for small and 6" for medium
-					</li>
-					<li>
-						Acadia is porcelain; has a drainage hole and plug
-					</li>
-					<li>
-						Balboa, Grant and Hyde are ceramic; Hyde comes with drainage saucer
-					</li>
-					<li>
-						Upcycled is made with recycled plastic; has a drainage hole and plug
-					</li>
-					<li>
-						Limited Edition Grant has a removable drainage plug
+						<img src="images/plantcare.svg"
+						<a href="https://www.thesill.com/blogs/plants-101/how-to-care-for-monstera-monstera-deliciosa">View our Plant Care Guide</a>
 					</li>
 				</ul>
 			</details>
 		</section>
 
-		<section>
-			<ul>
-				<li>
-					Bright indirect to medium light
-				</li>
-
-				<li>
-					Water every 1-2 weeks
-				</li>
-
-				<li>
-					<a href="https://www.thesill.com/blogs/plants-101/how-to-care-for-monstera-monstera-deliciosa">View our Plant Care Guide</a>
-				</li>
-			</ul>
-		</section>
 
 		<section>
 			<h2>You Might Like</h2>
-			<article>
-				<a href="product.html" target="_self">
-					<h3>Monstera Deliciosa</h3>
-					<p>$33-$67</p>
-					<p>more options</p>
-					<img src="images/pottedmonstera.jpg" alt=:" Monstera plant in a pot">
-				</a>
-			</article>
+				<ul>
+					<li>
+						
+						<a href="product.html">
+							<img src="images/adansonii.jpg" alt="Monstera Adansonii plant in a black pot">
+							Monstera Adansonii
+							<p>$13 - $37</p>
+							<p>more options</p>
+						</a>
+					</li>
 
-			<article>
-				<a href="product.html" target="_self">
-					<h3>Aglaonema Wishes</h3>
-					<p>$28-$67</p>
-					<p>more options</p>
-					<img src="images/aglaonema.jpg" alt=:" Aglaonema plant in a pot">
-				</a>
-			</article>
+					<li>
+						<a href="#">
+							<img src="images/aglaonema.jpg" alt="Aglaonema plant in a white pot">
+							Aglaonema Wishes
+							<p>$8 - $27</p>
+							<p>more options</p>
+						</a>
+					</li>
 
-			<article>
-				<a href="product.html" target="_self">
-					<h3>Large Bird of Paradise</h3>
-					<p>$85</p>
-					<p>one size</p>
-					<img src="images/birdofparadise.jpg" alt=:" Bird of Paradise plant in a pot">
-				</a>
-			</article>
+					<li>
+						<a href="#">
+							<img src="images/birdofparadise.jpg" alt=" Bird of Paradise plant in a brown pot">
+							Large Bird of Paradise
+							<p>$35</p>
+							<p>one size</p>
+						</a>
+					</li>
 
-			<article>
-				<a href="product.html" target="_self">
-					<h3>Parlor Palm</h3>
-					<p>$23-$67</p>
-					<p>more options</p>
-					<img src="images/parlorpalm.jpg" alt=:" Parlor Palm plant in a pot">
-				</a>
-			</article>
+					<li>
+						<a href="#">
+							<img src="images/parlorpalm.jpg" alt="Parlor Palm plant in a green pot">
+							Parlor Palm
+							<p>$13 - $27</p>
+							<p>more options</p>
+						</a>
+					</li>
+				</ul>
 		</section>
 
 		<section>
@@ -250,14 +240,12 @@
 				<p>Your browser does not support HTML5 video. Here is
 					a <a href="https://www.youtube.com/watch?v=onWi59jZXmI">link to the video</a> instead.</p>
 			</video>-->
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/onWi59jZXmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/onWi59jZXmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</section>
 
 		<section>
 			<h2>Plant Bio</h2>
-			<p>
-
-Monstera deliciosa is a species of evergreen tropical vine that is a part of Araceae, the aroid family. Native to the Tropical Americas, it is one of the few aroids which produces edible fruit, hence the species epithet deliciosa. However, it's incredibly rare that a Monstera will flower or produce fruit indoors. Instead, this plant is famous for its beautiful broad green leaves with natural leaf-holes, called fenestrations, which have led to the rise of its nickname, ‘swiss cheese plant’. These holes are theorized to maximize sun fleck capture on the forest floor by increasing the spread of the leaf while decreasing the mass of leaf cells to support.
+			<p> Monstera deliciosa is a species of evergreen tropical vine that is a part of Araceae, the aroid family. Native to the Tropical Americas, it is one of the few aroids which produces edible fruit, hence the species epithet deliciosa. However, it's incredibly rare that a Monstera will flower or produce fruit indoors. Instead, this plant is famous for its beautiful broad green leaves with natural leaf-holes, called fenestrations, which have led to the rise of its nickname, ‘swiss cheese plant’. These holes are theorized to maximize sun fleck capture on the forest floor by increasing the spread of the leaf while decreasing the mass of leaf cells to support.
 			</p>
 			<a href="https://www.thesill.com/blogs/plants-101/how-to-care-for-monstera-monstera-deliciosa">Learn more</a>
 		</section>
@@ -267,51 +255,64 @@ Monstera deliciosa is a species of evergreen tropical vine that is a part of Ara
 				From the Blog
 			</h2>
 
-			<article>
-				<a href="https://www.thesill.com/blogs/plants-101/seasonal-care-fall">
-				<h3>
-					Fall Plant Care Tips and Tricks
-				</h3>
-				<p>
-					PLANTS 101
-				</p>
-				<img src="images/falltips.jpg" alt="a few potted plants placed in a living space">
-				</a>
-			</article>
+				<ul>
+					<li>
+						<a href="https://www.thesill.com/blogs/plants-101/seasonal-care-fall">
+						<h3>
+							Fall Plant Care Tips and Tricks
+						</h3>
+						<p>
+							PLANTS 101
+						</p>
+						<img src="images/falltips.jpg" alt="a few potted plants placed in a living space">
+						</a>
+					</li>
 
-			<article>
-				<a href="https://www.thesill.com/blogs/diy/best-plants-office">
-				<h3>
-					Top 5 Plants for Your Home Office 
-				</h3>
-				<p>
-					DESIGN TIPS
-				</p>
-				<img src="images/office.jpg" alt="multiple potted plants placed in a home office">
-				</a>
-			</article>
+					<li>
+						<a href="https://www.thesill.com/blogs/diy/best-plants-office">
+						<h3>
+							Top 5 Plants for Your Home Office 
+						</h3>
+						<p>
+							DESIGN TIPS
+						</p>
+						<img src="images/office.jpg" alt="multiple potted plants placed in a home office">
+						</a>
+					</li>
 
-			<article>
-				<a href="https://www.thesill.com/blogs/plants-101/plant-care-for-large-plants">
-				<h3>
-					Plant Care for Large Plants
-				</h3>
-				<p>
-					PLANTS 101
-				</p>
-				<img src="images/large.png" alt="large potted plants placed in a bedroom">
-				</a>
-			</article>
+					<li>
+						<a href="https://www.thesill.com/blogs/plants-101/plant-care-for-large-plants">
+						<h3>
+							Plant Care for Large Plants
+						</h3>
+						<p>
+							PLANTS 101
+						</p>
+						<img src="images/large.png" alt="large potted plants placed in a bedroom">
+						</a>
+					</li>
+
+					<li>
+						<a href="https://www.thesill.com/blogs/plants-101/plant-care-for-large-plants">
+						<h3>
+							How to Gift a Plant Like a Pro
+						</h3>
+						<p>
+							ASK THE SILL
+						</p>
+						<img src="images/gift.jpg" alt="small potted plants surrounded by gift packages">
+						</a>
+					</li>
 		</section>
 
 	</main>
 
 
 	<footer>
-		<section>
+		<section id ="discount">
 			<h2>Welcome to our community</h2>
-				<p>Shopping with The Sill means you're supported every step of your plant parenthood journey. Save 20% on your first purchase 
-				when you sign up today. Learn more about our Reward Program.</p>
+				<p>Shop with The Sill and you're supported every step of your plant parenthood. Save 20% on your first purchase 
+				when you sign up today.</p>
 
 			<form action="#" method="post">
 				<label for="name">Name</label>
@@ -320,7 +321,6 @@ Monstera deliciosa is a species of evergreen tropical vine that is a part of Ara
 				<label for="email">Email</label>
 				<input type="email" name="email" id="email" placeholder="Your email address" required>
 				<button type="submit">Join Now</button>
-				<button>Learn More</button>
 			</form>
 			<img>
 		</section>
