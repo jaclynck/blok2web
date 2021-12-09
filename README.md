@@ -57,10 +57,10 @@ Productpagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele homepagina: 
-<img src="https://github.com/jaclynck/blok2web/blob/main/images/Homepageschets.png?raw=true" width="375px" alt="breakdown van de hele homepagina">
+<img src="images/Homepageschets.png" width="375px" alt="breakdown van de hele homepagina">
 
 ### de hele productpagina: 
-<img src="https://github.com/jaclynck/blok2web/blob/main/images/Productpageschets.png?raw=true" width="375px" alt="breakdown van de hele productpagina">
+<img src="images/Productpageschets.png" width="375px" alt="breakdown van de hele productpagina">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/menu.png" width="375px" alt="breakdown van een dynamisch deel">
@@ -174,6 +174,8 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 #### Spelen met een screenreader 
 Hier korte omschrijving (met indien nodig een afbeelding)
 
+<img src="images/screenreader.png" width="375px" alt="screenshot van de homepagina met een screenreader">
+
 Met een screenreader krijg je minder snel een overzicht van wat er allemaal op de website te vinden is, daarnaast krijg je met de toetscombinaties een heel andere interactie met een website.
 
 1. De stem van de voiceover van mijn computer zelf is Engels, maar mijn HTML is in het Nederlands ingesteld. Ik hoor dus 2 verschillende stemmen en talen door elkaar heen terwijl de content van mijn website Engels is. 
@@ -189,13 +191,17 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 #### Muis en toetsenbord
 Hier korte omschrijving (met indien nodig een afbeelding)
 
+<img src="images/tab.png" width="375px" alt="screenshot van de homepagina waar je doorheen kunt tabben">
+
 1. De homeknop wordt niet zichtbaar met een border tijdens het tabben.
+2. Heel andere interactie met de website: ieder klikbaar element krijgt een border eromheen zodat je visueel kan zien waar op de website je nu bent.
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
-
 #### Visuele beperking
 Hier korte omschrijving (met indien nodig een afbeelding)
+
+<img src="images/bril.jpg" width="375px" alt="testpersoon probeert de website te bedienen met een bril die je zicht beperkt">
 
 1. Diabetic eye disease: vlekjes door het scherm heen. Alles was nog goed leesbaar en de knopjes waren te vinden. Het kostte alleen wat meer moeite.
 2. Peripheral field loss: kost veel moeite om te concentreren op de content van de website. Je kan echt alleen in het midden van je field of view scherp zien.
@@ -206,6 +212,8 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 #### Concentratieprobleem
 Hier korte omschrijving (met indien nodig een afbeelding)
+
+<img src="images/ballon.jpg" width="375px" alt="persoon bedient website terwijl zij een ballon in de lucht houden">
 
 Een form invullen tijdens het omhoog houden van een ballon is moeilijk. 
 1. De radio buttons zijn vrij klein, lastig eentje uit te kiezen.
@@ -231,6 +239,12 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 -dit ging goed- Flexbox gebruikt om de menubar elementen naast elkaar te krijgen en het menu scrollt nu ook mee. De tweede pagina is ook bijna zo goed als af. 
 
 -dit was lastig- Passende states verzinnen en deze goed werkend laten maken. Verschillende soorten forms stylen. Beginnen aan de Javascript interactie.
+
+### voortgang 3 homepagina: 
+<img src="images/voortgang3home.png" width="375px" alt="homepagina helemaal af">
+
+### voortgang 3 productpagina: 
+<img src="images/voortgang3product.png" width="375px" alt="productpagina vrijwel af">
 
 
 ### Agenda voor meeting
@@ -299,7 +313,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 15. bron 15 - h1 state met de hover underline: https://codepen.io/shooft/pen/yLOdLBg?editors=0100
 16. bron 16 - menu flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 17. bron 17 - icon naast heading: https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line 
-
-bron  - uitklapbare hamburger menu https://codepen.io/jaclynck-the-typescripter/pen/VwMwVqX  
+18. bron 18 - uitklapbare hamburger menu https://codepen.io/jaclynck-the-typescripter/pen/VwMwVqX  
 
 </details>
