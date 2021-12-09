@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
 	
 	<head>
 		<meta charset="UTF-8">
 		<meta name="author" content="Jaclyn Karsseboom">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>The Sill planten webshop</title>
+		<title>The Sill plant webshop</title>
 		
 		<link href="styles/style.css" rel="stylesheet">
 		<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -14,68 +14,54 @@
 	</head>
 
 	<body class="product">
-		<header>
-			<!--<a href="#" class="infobar">Shop our new plant bundles expertly paired for your space</a>-->
-					
+		<header>	
 			<section>
-				
-					<!-- het menu -->
 					<nav>
 						<h1>
 							<a href="index.html" target="_self">The Sill</a>
 						</h1>
 						<button aria-hidden="true">Menu</button>
-							<!--
-								<ul>
-									<li>
-										<a href="#">Search</a> 
-									</li>
-	
-									<li>
-										<a href="#">Shop</a> 
-									</li>
-	
-									<li>
-										<a href="#">The Holiday Collection</a>
-									</li>
-	
-									<li>
-										<a href="#">New Arrivals</a>
-									</li>
-	
-									<li>
-										<a href="#">Plant Bundles</a>
-									</li>
-	
-									<li>
-										<a href="#">Sale</a>
-									</li>
-	
-									<li>
-										<a href="#">Subscriptions</a>
-									</li>
-	
-									<li>
-										<a href="#">Store Locations</a>
-									</li>
-	
-									<li>
-										<a href="#">Log In</a>
-									</li>
-								</ul>
-				
-								<ul>
-									<li>
-										<a href="#">Contact Us</a>
-									</li>
-									<li>
-										<a href="#">Help / FAQ</a>
-									</li>
-									<li>
-										<a href="#">Track Order</a>
-									</li>
-								</ul>
-								-->
+
+						<ul>
+							<li>
+								<a href="#">Search</a> 
+							</li>
+
+							<li>
+								<a class="active">Shop</a> 
+							</li>
+
+							<li>
+								<a href="#shopnow">New Arrivals</a>
+							</li>
+
+							<li>
+								<a href="#shopnow">Plant Bundles</a>
+							</li>
+
+							<li>
+								<a href="#discount">Subscriptions</a>
+							</li>
+
+							<li>
+								<a href="#">Store Locations</a>
+							</li>
+
+							<li>
+								<a href="#discount">Log In</a>
+							</li>
+
+							<li>
+								<a href="#">Contact Us</a>
+							</li>
+							<li>
+								<a href="#">Help / FAQ</a>
+							</li>
+							<li>
+								<a href="#">Track Order</a>
+							</li>
+						</ul>
+
 						<button>Cart</button>
 					</nav>
 
@@ -152,9 +138,12 @@
 
 			<input type="radio" id="mint" name="color">
 			<label for="mint">Mint</label>
+		</form>
 
-			<input type="radio" id="terracotta" name="color">
-			<label for="terracotta">Terracotta</label>
+		<form>
+			<label for="color">Custom Planter Color</label>
+			<input type="color">
+			<label for="black">Black</label>
 		</form>
 
 		<button type="button">Add to Cart</button>
@@ -171,17 +160,17 @@
 				<summary>+ More Details</summary>
 				<ul>
 					<li>
-						<img src="images/light.svg">
+						<img src="images/light.svg" alt="">
 						Bright indirect to medium light
 					</li>
 	
 					<li>
-						<img src="images/water.svg">
+						<img src="images/water.svg" alt="">
 						Water every 1-2 weeks
 					</li>
 	
 					<li>
-						<img src="images/plantcare.svg"
+						<img src="images/plantcare.svg" alt="">
 						<a href="https://www.thesill.com/blogs/plants-101/how-to-care-for-monstera-monstera-deliciosa">View our Plant Care Guide</a>
 					</li>
 				</ul>
@@ -194,7 +183,7 @@
 				<ul>
 					<li>
 						
-						<a href="product.html">
+						<a href="#">
 							<img src="images/adansonii.jpg" alt="Monstera Adansonii plant in a black pot">
 							Monstera Adansonii
 							<p>$13 - $37</p>
@@ -271,7 +260,7 @@
 					<li>
 						<a href="https://www.thesill.com/blogs/diy/best-plants-office">
 						<h3>
-							Top 5 Plants for Your Home Office 
+							Top 5 Plants for Your Office 
 						</h3>
 						<p>
 							DESIGN TIPS
@@ -295,7 +284,7 @@
 					<li>
 						<a href="https://www.thesill.com/blogs/plants-101/plant-care-for-large-plants">
 						<h3>
-							How to Gift a Plant Like a Pro
+							How to Gift a Plant 
 						</h3>
 						<p>
 							ASK THE SILL
@@ -310,7 +299,7 @@
 
 	<footer>
 		<section id ="discount">
-			<h2>Welcome to our community</h2>
+			<h2>Welcome to our family</h2>
 				<p>Shop with The Sill and you're supported every step of your plant parenthood. Save 20% on your first purchase 
 				when you sign up today.</p>
 

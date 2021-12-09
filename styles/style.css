@@ -43,7 +43,7 @@ body {
 }
 
 /*********************/
-/* Header */
+/* Header en banner */
 /*********************/
 
 body header {
@@ -60,28 +60,6 @@ body header {
   grid-area: header;
 }
 
-/* Logo */
-
-header > a:first-of-type {
-  line-height:1;
-  justify-self:center;
-}
-
-h1 a {
-  font-family: 'tenez', helvetica, arial, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--button-color);
-  text-decoration: underline;
-}
-
-h1 a:hover {
-  text-decoration: none;
-  color: var(--accent-color);
-}
-
 h2 {
   font-family: 'tenez', helvetica arial, sans-serif;
   font-weight: bold;
@@ -93,8 +71,10 @@ h2 {
 
   padding-left: 2rem;
   max-width: 30rem;
-  margin-top: 10rem;
+  margin-top: 8rem;
   margin-bottom: 0;
+
+  padding-right: 2rem;
 }
 
 a {
@@ -103,15 +83,10 @@ a {
   font-weight: normal;
 }
 
-a:hover {
-  cursor: pointer;
-  text-decoration: underline; 
-}
-
 header section:nth-of-type(2) a {
   padding: 1rem 1.2rem;
   margin: 0 0 0 2rem;
-  width: 25%;
+  width: 30vw;
 
   background-color: var(--main-color);
   color: var(--button-color);
@@ -129,12 +104,16 @@ header section:nth-of-type(2) a {
 
   box-shadow:inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
   cursor:pointer;
+
+  transition: .4s ease-in-out;
 }
 
 header section:nth-of-type(2) a:hover {
-  background-color: lightseagreen;
   text-decoration: none;
   font-weight: bold;
+  border-radius:5rem;
+
+  transition: .4s ease-in-out;
 }
 
 header section:nth-of-type(2) a:focus {
@@ -148,35 +127,25 @@ header section:nth-of-type(2) a:focus {
 header section p {
   padding-left: 2rem;
   font-size: 1.2rem;
+  padding-right: 2rem;
 }
 
-/*
-.infobar {
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  padding: 0.5rem 1rem;
-
-  text-align: center;
-  display: inline-block;
-  background-color: #00ab84;
-  color: white;
-  text-decoration: none;
-  font-weight: normal; 
-}*/
+/* Menubalk */
 
 nav {
   display: flex;
-  padding-left: 1rem;
   margin-bottom: 0;
 
+  height: 4.5rem;
+
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: var(--main-color);
 
   position: fixed;
-  top: 1;
-  width: 100%;
+  top: 0;
+  width: 100vw;
   z-index: 3;
 }
 
@@ -193,7 +162,7 @@ nav button {
   border-radius:.3rem;
   box-sizing: border-box;
 
-  text-align:c enter;
+  text-align: center;
   font-family: 'Tenez', helvetica, arial, sans-serif;
   font: inherit;
   font-weight:bold;
@@ -202,28 +171,133 @@ nav button {
 
   box-shadow:inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
   cursor: pointer;
+
+  transition: .2s;
 }
 
 nav button:hover {
-  background: var(--grey-background-color);
+  padding: .5rem 2rem;
 }
 
 nav button:focus {
+  background-color: var(--accent-color);
+  color:var(--button-color);
   box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
 }
 
 nav h1 {
   order: 1;
-  color:var(--button-color);
+  color:var(--text-color);
 }
 
 nav button:nth-of-type(2) {
   order: 2;
+  z-index: -3;
+}
+
+nav button:first-of-type {
+  appearance: none;
+  position: relative;
+  z-index: 3;
+}
+
+/*******************/
+/* lijst met links uitklappen */
+
+nav ul {
+  margin: 0;
+  padding: 4em 0 0;
+  background: var(--green-background-color);
+  list-style: none;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  transform: translateX(-40em);
+
+  transition: .5s;
+}
+
+nav.toonMenu ul {
+  transition: .5s;
+  transform: translateX(0);
+}
+
+nav li {
+  margin:0; 
+  padding: 1rem;
+  border-bottom: solid 1px var(--main-color);
+}
+
+nav a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+nav a:hover, nav li:hover {
+  background-color: var(--main-color);
+  color: var(--button-color);
+  font-weight: bold;
+}
+
+/* Logo */
+
+h1 a {
+  font-family: 'Tenez', helvetica, arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.8rem;
+  font-weight: bold;
+
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--button-color);
+  text-decoration: none;
+  outline: none;
+
+  transition: .2s ease-in-out;
+}
+
+/* states van logo */
+
+h1 a::before {
+  content: "";
+  position: absolute;
+  background-color:currentColor;
+
+  left:.125rem;
+  right:.1rem;
+  bottom:-.2rem;
+  height:.2rem;
+  
+  border-radius:1em;
+  
+  transform:scaleX(1);
+  transition:.5s;
+}
+
+h1 a:hover::before {
+  transform:scaleX(0)
+}
+
+h1 a:active {
+  color: var(--green-background-color);
 }
 
 /**************************/
 /* DIT IS DE MAIN CONTENT */
 /**************************/
+
+/*  Trending Now... productoverzicht */
 
 main section:first-of-type h3 {
   padding-left: 2rem;
@@ -281,7 +355,7 @@ main section:first-of-type a:hover {
 }
 
 h3 {
-  font-family: 'tenez', helvetica, roboto, arial, sans-serif;
+  font-family: 'tenez', helvetica, arial, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 2.5rem;
@@ -290,16 +364,21 @@ h3 {
   margin: 0;
 }
 
+/* About the shop: to be human... */
+
 main section:last-of-type {
   padding-left: 2rem;
-  max-width: 30rem;
   margin-bottom: 0;
-  margin-right: 2rem;
+  padding-right: 2rem;
 }
 
 main section:last-of-type h2 {
   padding-left: 0rem;
   padding-top: 0rem;
+  margin-top: 2rem;
+}
+
+main section:last-of-type article {
   margin-top: 2rem;
 }
 
@@ -309,6 +388,13 @@ main section:last-of-type h3 {
 
 main section:last-of-type img {
   width: 4rem;
+  float: left;
+  padding: 0 1rem 0 0;
+}
+
+main section:last-of-type p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 /*****************************/
@@ -320,6 +406,7 @@ footer {
   background-color: var(--grey-background-color);
   padding: 2rem;
   margin-bottom: 0;
+  display: block;
 }
 
 footer h2 {
@@ -333,17 +420,24 @@ footer img {
 }
 
 footer input {
-  width: 100%;
+  width: 70vw;
   padding: 1rem;
   margin: 1rem 0;
+
   box-sizing: border-box;
   border: 2px solid var(--accent-color);
   border-radius: 4px;
   display: block;
-  transition:.2s;
-  font-family: 'tenez', helvetica, roboto, arial, sans-serif;
+  transition:.4s ease-in-out;
+
+  font-family: 'tenez', helvetica, arial, sans-serif;
   font-style: normal;
   font-size: 1rem;
+}
+
+footer input:hover {
+  border: 3px solid var(--accent-color);
+  width: 100vw;
 }
 
 footer input:focus {
@@ -360,7 +454,7 @@ footer form input[type=button], input[type=submit] {
   background-color: var(--main-color);
   border: none;
   color: var(--button-color);
-  padding: 16px 32px;
+  padding: 1rem 2rem;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
@@ -373,27 +467,35 @@ footer button {
 
   padding: .8rem 1.2rem;
   margin: .5rem .5rem .5rem 0;
-  width: 100%;
+  width: 30vw;
 
-  display:inline-block;
-  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   border: none;
   border-radius:.3rem;
   box-sizing: border-box;
 
   text-align: center;
-  font-family:'Tenez', helvetica, roboto, arial, sans-serif;
+  font-family:'Tenez', helvetica, arial, sans-serif;
   font: inherit;
   font-weight: normal;
 
   box-shadow: inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
   cursor:pointer;
+
+  transition: .4s ease-in-out;
+}
+
+footer button:disabled {
+  background-color: var(--accent-color);
+  color:var(--button-color);
 }
 
 footer button:hover {
-  background: lightseagreen;
   font-weight: bold;
+  width: 100%;
 }
 
 footer button:focus {
@@ -401,44 +503,8 @@ footer button:focus {
   text-decoration: none;
   box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
   cursor:pointer;
+  width: 100%;
 }
-
-footer button:nth-of-type(2) {
-  background-color: var(--button-color);
-  color: var(--main-color);
-
-  padding: .8rem 1.2rem;
-  margin: 0 .5rem .5rem 0;
-
-  display: inline-block;
-  position:relative;
-  border: 1px solid var(--grey-background-color);
-  border-radius:.3rem;
-  box-sizing: border-box;
-
-  text-align: center;
-  font-family: 'Tenez', helvetica, roboto, arial, sans-serif;
-  font: inherit;
-  font-weight: normal;
-
-  box-shadow:inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
-  cursor: pointer;
-}
-
-footer button:nth-of-type(2):hover {
-  background: lightgrey;
-  color: var(--accent-color);
-  font-weight: bold;
-}
-
-footer button:nth-of-type(2):focus {
-  background-color: lightgrey;
-  text-decoration: none;
-  color: var(--accent-color);
-  box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
-  cursor:pointer;
-}
-
 
 /***************************************/
 /* Productpagina van de Monstera plant */
@@ -449,13 +515,13 @@ footer button:nth-of-type(2):focus {
 .product header {
   background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_monstera_variant_medium_grant_black_587b36b4-4304-47f4-924e-b0bb4dfb0090_1024x.jpg?v=1611287458);
   background-size: cover;
+  background-repeat: no-repeat;
     
   margin: 0;
   padding: 0; 
 
   width: 100%;
-  max-height: calc(100vh - 10em);
-  min-height: 45em;
+  height: 70vh;
 }
 
 .product main section:first-of-type h3 {
@@ -464,28 +530,33 @@ footer button:nth-of-type(2):focus {
 
 /* Formulieren */
 
-/*.product form {
-  display: flex;
-}*/
-
 .product form {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
+  margin-bottom: .5rem;
 }
 
 .product form label:first-of-type {
   font-size: 1.2rem;
   font-weight: bold;
+  font-family: 'Tenez', helvetica, arial, sans-serif;
+  
+  margin-bottom: 1rem;
 }
 
 .product form input {
   font-size: 1rem;
   font-weight: normal;
+  font-family: 'Tenez', helvetica, arial, sans-serif;
 }
 
 .product select {
   display: block;
   width: 50%;
-  padding: 1rem;
+  padding: .8rem;
+  margin: .5rem 0 0 0;
+
+  font-size: 1rem;
+  font-family: 'Tenez', helvetica, arial, sans-serif;
 
   border: 2px solid var(--text-color);
   border-radius: 4px;
@@ -493,6 +564,15 @@ footer button:nth-of-type(2):focus {
   background-color: var(--button-color);
 
   transition: .5s;
+}
+
+.product select:hover {
+  width: 100%;
+
+  border: 4px solid var(--main-color);
+  border-radius: 4px;
+
+  cursor:pointer;
 }
 
 .product select:focus {
@@ -504,42 +584,57 @@ footer button:nth-of-type(2):focus {
   background-color: var(--green-background-color);
 }
 
-
-
 .product main button {
   background-color: var(--main-color);
   color: var(--button-color);
 
   padding: .8rem 1.2rem;
-  margin: .5rem .5rem .5rem 0;
+  margin: .5rem 0rem .5rem 0;
   width: 100%;
-
-  display:inline-block;
-  position:relative;
 
   border: none;
   border-radius:.3rem;
   box-sizing: border-box;
 
   text-align: center;
-  font-family:'Tenez', helvetica, roboto, arial, sans-serif;
+  font-family:'Tenez', helvetica, arial, sans-serif;
   font: inherit;
 
   box-shadow: inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
   cursor:pointer;
+
+  transition: .2s ease-in-out;
+}
+
+.product main button:hover {
+  font-weight: bold;
+  width: 100%;
+}
+
+.product main button:focus {
+  background-color: lightseagreen;
+  text-decoration: none;
+  box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
+  cursor:pointer;
+  width: 100%;
 }
 
 .product main section:first-of-type a {
   color: var(--main-color);
   font-weight: normal;
   text-decoration: underline;
-  justify-self: center;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  padding-top: .5rem;
 }
 
 /* Details */
 
 .product main section:nth-of-type(2) {
-  padding-top: 2rem;
+  padding-top: 0rem;
   max-width: 30rem;
   margin-bottom: 0;
   margin-right: 0;
@@ -574,10 +669,6 @@ footer button:nth-of-type(2):focus {
   font-size: 1.2rem;
 }
 
-.product main section:nth-of-type(2) summary {
-  display: flex;
-}
-
 .product main section:nth-of-type(2) li {
   display: flex;
   align-items: center;
@@ -596,6 +687,11 @@ footer button:nth-of-type(2):focus {
   grid-gap: 1rem;
   justify-content: center;
   padding: 0rem;
+}
+
+.product main section:nth-of-type(3) h2 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 .product main section:nth-of-type(3) li img {
@@ -624,8 +720,18 @@ footer button:nth-of-type(2):focus {
   padding: 0 2rem 0 2rem;
 }
 
-.product h2,h3 {
+.product h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.product h2 {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
   padding: 0rem;
+  font-size: 2.5rem;
 }
 
 
@@ -643,6 +749,10 @@ footer button:nth-of-type(2):focus {
 
 /* Plant Bio */
 
+.product main section:nth-of-type(5) h2 {
+  margin-top: 2rem;
+}
+
 .product main section:nth-of-type(5) a {
   background-color: var(--button-color);
   color: var(--accent-color);
@@ -659,7 +769,7 @@ footer button:nth-of-type(2):focus {
   box-sizing: border-box;
 
   text-align: center;
-  font-family:'Tenez', helvetica, roboto, arial, sans-serif;
+  font-family:'Tenez', helvetica, arial, sans-serif;
   font: inherit;
 
   cursor:pointer;
@@ -700,7 +810,7 @@ footer button:nth-of-type(2):focus {
 }
 
 .product main section:last-of-type h3 {
-  font-family: 'tenez', helvetica, roboto, arial, sans-serif;
+  font-family: 'tenez', helvetica, arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: var(--text-color);
@@ -709,7 +819,7 @@ footer button:nth-of-type(2):focus {
   line-height: 2rem; 
 
   max-width: 50rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0;
 }
 
@@ -718,4 +828,5 @@ footer button:nth-of-type(2):focus {
   text-decoration: none;
   font-size: 1rem;
   line-height: 1rem; 
+  
 } 

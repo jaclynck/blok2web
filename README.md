@@ -22,7 +22,7 @@ Jaclyn Karsseboom
 Blauwe piste
 
 #### Je focus:
-Responsive?
+Extra aandacht aan de surface plane
  
 </details>
 
@@ -57,10 +57,10 @@ Productpagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele homepagina: 
-<img src="images/homepageschets.png" width="375px" alt="breakdown van de hele homepagina">
+<img src="https://github.com/jaclynck/blok2web/blob/main/images/Homepageschets.png?raw=true" width="375px" alt="breakdown van de hele homepagina">
 
 ### de hele productpagina: 
-<img src="images/productpageschets.png" width="375px" alt="breakdown van de hele productpagina">
+<img src="https://github.com/jaclynck/blok2web/blob/main/images/Productpageschets.png?raw=true" width="375px" alt="breakdown van de hele productpagina">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/menu.png" width="375px" alt="breakdown van een dynamisch deel">
@@ -171,26 +171,46 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
+#### Spelen met een screenreader 
 Hier korte omschrijving (met indien nodig een afbeelding)
+
+Met een screenreader krijg je minder snel een overzicht van wat er allemaal op de website te vinden is, daarnaast krijg je met de toetscombinaties een heel andere interactie met een website.
+
+1. De stem van de voiceover van mijn computer zelf is Engels, maar mijn HTML is in het Nederlands ingesteld. Ik hoor dus 2 verschillende stemmen en talen door elkaar heen terwijl de content van mijn website Engels is. 
+2. Ik heb gifs en icons op de homepage zijn die worden beschreven als een unlabelled image missing image description.
+3. De screenreader noemt op de productpage alle knoppen binnen de YouTube video speler op.
+
+Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+
+1. <html lang="nl"> moet naar het Engels verandert worden.
+2. Alt tekst toevoegen bij alle afbeeldingen of voor de minder belangrijke images die meer als decoratie dienen ervoor zorgen dat die images genegeerd worden door screenreaders.
+3. Andere video speler of die buttons/links disablen zodat ze niet opgesomd worden door de screenreader.
+
+#### Muis en toetsenbord
+Hier korte omschrijving (met indien nodig een afbeelding)
+
+1. De homeknop wordt niet zichtbaar met een border tijdens het tabben.
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 
-#### Titel tweede bevinding. 
+#### Visuele beperking
 Hier korte omschrijving (met indien nodig een afbeelding)
+
+1. Diabetic eye disease: vlekjes door het scherm heen. Alles was nog goed leesbaar en de knopjes waren te vinden. Het kostte alleen wat meer moeite.
+2. Peripheral field loss: kost veel moeite om te concentreren op de content van de website. Je kan echt alleen in het midden van je field of view scherp zien.
+3. Blur: kopjes zijn leesbaar en de afbeeldingen zijn wel duidelijk. De knoppen zijn te onderscheiden maar de tekst in de knoppen zijn onduidelijk. Echter kan ik de paragraphs niet lezen omdat de letters te fijn zijn en verdwijnen in de achtergrond.
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 
-#### Titel volgende bevinding. 
+#### Concentratieprobleem
 Hier korte omschrijving (met indien nodig een afbeelding)
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+Een form invullen tijdens het omhoog houden van een ballon is moeilijk. 
+1. De radio buttons zijn vrij klein, lastig eentje uit te kiezen.
+2. Het is lastig om iedere optie uit een select form te lezen en er eentje uit te selecteren. 
+3. Het typen ging heel langzaam omdat je maar 2 letters per keer kan intypen anders valt je ballon alweer op de grond.
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
@@ -207,6 +227,10 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+-dit ging goed- Flexbox gebruikt om de menubar elementen naast elkaar te krijgen en het menu scrollt nu ook mee. De tweede pagina is ook bijna zo goed als af. 
+
+-dit was lastig- Passende states verzinnen en deze goed werkend laten maken. Verschillende soorten forms stylen. Beginnen aan de Javascript interactie.
 
 
 ### Agenda voor meeting
@@ -271,6 +295,10 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 11. bron 11 - button styling: https://fdossena.com/?p=html5cool/buttons/i.frag 
 12. bron 12 - color input types, range input types en optgroup: https://www.youtube.com/watch?v=AryZSCeKU9Y&list=WL&index=38&t=8s 
 13. bron 13 - scroll to bottom met id tag: https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html
+14. bron 14 - sticky menubar: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+15. bron 15 - h1 state met de hover underline: https://codepen.io/shooft/pen/yLOdLBg?editors=0100
+16. bron 16 - menu flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+17. bron 17 - icon naast heading: https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line 
 
 bron  - uitklapbare hamburger menu https://codepen.io/jaclynck-the-typescripter/pen/VwMwVqX  
 

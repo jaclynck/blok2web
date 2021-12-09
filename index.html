@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
 	
 	<head>
 		<meta charset="UTF-8">
 		<meta name="author" content="Jaclyn Karsseboom">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>The Sill planten webshop</title>
+		<title>The Sill plant webshop</title>
 		
 		<link href="styles/style.css" rel="stylesheet">
 		<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -15,73 +15,56 @@
 
 	<body>
 		<header>
-				<!--<a href="#shopnow" class="infobar">Shop our new plant bundles expertly paired for your space</a>-->
-
 			<section>
+					<nav>
+						<h1>
+							<a href="index.html" target="_self">The Sill</a>
+						</h1>
 
-			
-			
-						<!-- het menu -->
-						<nav>
-							<h1>
-								<a href="index.html" target="_self">The Sill</a>
-							</h1>
+						<button aria-hidden="true">Menu</button>
 
-							<button aria-hidden="true">Menu</button>
-							<!--
-								<ul>
-									<li>
-										<a href="#">Search</a> 
-									</li>
-	
-									<li>
-										<a href="#">Shop</a> 
-									</li>
-	
-									<li>
-										<a href="#">The Holiday Collection</a>
-									</li>
-	
-									<li>
-										<a href="#">New Arrivals</a>
-									</li>
-	
-									<li>
-										<a href="#">Plant Bundles</a>
-									</li>
-	
-									<li>
-										<a href="#">Sale</a>
-									</li>
-	
-									<li>
-										<a href="#">Subscriptions</a>
-									</li>
-	
-									<li>
-										<a href="#">Store Locations</a>
-									</li>
-	
-									<li>
-										<a href="#">Log In</a>
-									</li>
-								</ul>
-				
-								<ul>
-									<li>
-										<a href="#">Contact Us</a>
-									</li>
-									<li>
-										<a href="#">Help / FAQ</a>
-									</li>
-									<li>
-										<a href="#">Track Order</a>
-									</li>
-								</ul>
-								-->
-							<button>Cart</button>
-						</nav>
-	
+							<ul>
+								<li>
+									<a href="#">Search</a> 
+								</li>
+
+								<li>
+									<a class="active">Shop</a> 
+								</li>
+
+								<li>
+									<a href="#shopnow">New Arrivals</a>
+								</li>
+
+								<li>
+									<a href="#shopnow">Plant Bundles</a>
+								</li>
+
+								<li>
+									<a href="#discount">Subscriptions</a>
+								</li>
+
+								<li>
+									<a href="#">Store Locations</a>
+								</li>
+
+								<li>
+									<a href="#discount">Log In</a>
+								</li>
+
+								<li>
+									<a href="#">Contact Us</a>
+								</li>
+								<li>
+									<a href="#">Help / FAQ</a>
+								</li>
+								<li>
+									<a href="#">Track Order</a>
+								</li>
+							</ul>
+
+						<button>Cart</button>
+					</nav>
 				</section>
 	
 				<section>
@@ -92,53 +75,56 @@
 		</header>
 
 		<main>
-			<!--Producten-->
-			<section> 
-				<h3 id="shopnow">Trending Now...</h3>
+			<section id="shopnow"> 
+				<h3>Trending Now...</h3>
 					<ul>
 						<li>
-							<img src="images/pottedmonstera.jpg" alt="Monstera plant in a black pot">
-							<a href="product.html">Monstera Deliciosa
+							<a href="product.html">
+								<img src="images/pottedmonstera.jpg" alt="Monstera plant in a black pot">
+								Monstera Deliciosa
 								<p>$13 - $37</p>
 								<p>more options</p>
 							</a>
 						</li>
 		
 						<li>
-							<img src="images/aglaonema.jpg" alt="Aglaonema plant in a white pot">
-							<a href="#">Aglaonema Wishes
+							<a href="#">
+								<img src="images/aglaonema.jpg" alt="Aglaonema plant in a white pot">
+								Aglaonema Wishes
 								<p>$8 - $27</p>
 								<p>more options</p>
 							</a>
 						</li>
 		
 						<li>
-							<img src="images/liveplants.jpg" alt="Five potted plants lined up and getting watered with a water spray">
-							<a href="#">Shop Our Plant Bundles</a>
-
+							<a href="#">
+								<img src="images/liveplants.jpg" alt="Five potted plants lined up and getting watered with a water spray">
+								Shop Our Plant Bundles</a>
 						</li>
 		
 						<li>
-							<img src="images/birdofparadise.jpg" alt=" Bird of Paradise plant in a brown pot">
-							<a href="#">Large Bird of Paradise
+							<a href="#">
+								<img src="images/birdofparadise.jpg" alt=" Bird of Paradise plant in a brown pot">
+								Large Bird of Paradise
 								<p>$35</p>
 								<p>one size</p>
 							</a>
 						</li>
 		
 						<li>
-							<img src="images/parlorpalm.jpg" alt="Parlor Palm plant in a green pot">
-							<a href="#">Parlor Palm
+							<a href="#">
+								<img src="images/parlorpalm.jpg" alt="Parlor Palm plant in a green pot">
+								Parlor Palm
 								<p>$13 - $27</p>
 								<p>more options</p>
 							</a>
 						</li>
 
-						<li><img src="images/plantgift.gif"></li>
+						<li><img src="images/plantgift.gif" alt=""></li>
 					</ul>
 			</section>
 
-			<!--About section-->
+
 			<section>
 				<article>
 					<h2>To be human is to experience biophilia</h2>
@@ -146,33 +132,33 @@
 				</article>
 
 				<article>
-					<img src="images/online.png">
+					<img src="images/online.png" alt="">
 					<h3>Shop Online</h3>
 					<p>Enjoy plants, pots, botanicals and more delivered to your door. Our plant care library and virtual workshops provide support and encouragement to all plant parents.</p>
 					<img>
 				</article>
 
 				<article>
-					<img src="images/subscribe.png">
+					<img src="images/subscribe.png" alt="">
 					<h3>Subscribe</h3>
 					<p>Look forward to a new plant every month. We choose for you from best sellers and subscriber-only plants, while you enjoy free shipping and other community perks.</p>
 					<img>
 				</article>
 
 				<article>
-					<img src="images/store.png">
+					<img src="images/store.png" alt="">
 					<h3>Shop In-Store</h3>
 					<p>Visit our stores in New York, L.A., San Francisco and Chicago to explore your online favorites and discover specialty plants from local growers.</p>
 					<img>
 				</article>
 			</section>
-
 		</main>
 
+
 		<footer>
-			<section>
-				<img src="images/merry.gif">
-				<h2>Welcome to our community</h2>
+			<section id ="discount">
+				<img src="images/merry.gif" alt="">
+				<h2>Welcome to our family</h2>
 					<p>Shop with The Sill and you're supported every step of your plant parenthood. Save 20% on your first purchase 
 					when you sign up today.</p>
 
@@ -184,7 +170,6 @@
 					<input type="email" name="email" id="email" placeholder="Your email address" required>
 					<button type="submit">Join Now</button>
 				</form>
-				<img>
 			</section>
 		</footer>
 
