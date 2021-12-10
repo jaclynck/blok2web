@@ -255,6 +255,10 @@ Een form invullen tijdens het omhoog houden van een ballon is moeilijk.
 ### eindopdracht darkmodus:
 <img src="images/finaldarkhome.png" width="375px" alt="hoofdpagina in dark modus">
 
+### validatie:
+<img src="images/cssvalid.png" width="375px" alt="css is helemaal ok!">
+<img src="images/htmlwarning.png" width="375px" alt="html heeft een aantal warnings die ik niet wist op te lossen">
+
 </details>
 
 
