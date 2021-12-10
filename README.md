@@ -22,7 +22,12 @@ Jaclyn Karsseboom
 Blauwe piste
 
 #### Je focus:
-Extra aandacht aan de surface plane
+Extra aandacht aan de surface plane:
+1. States van controls (forms, inputs, links)
+2. Advanced positioning: sticky navigatiebalk
+3. Formulieren in de footer en op de productpage
+4. Productpage bevat een Youtube video
+5. Light en dark mode
  
 </details>
 
@@ -80,7 +85,6 @@ Productpagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 -dit ging goed- Mijn HTML tot nu toe is netjes en goed leesbaar. Ik heb verschillende elementen in mijn code staan, zoals lists, input forms en select forms. Ik heb de bronnen van hoe ik deze correct moest coderen opgeslagen in de bronnenlijst.
 
@@ -92,19 +96,7 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### voortgang 1 productpagina: 
 <img src="images/voortgang1product.png" width="375px" alt="productpagina met alleen html">
 
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - Een paragraph in een anchor is dubbelop.
 - De call to action knop moet een link zijn, geen button. Buttons zijn meer voor een form submitten en links leiden naar een andere pagina.
@@ -126,7 +118,6 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 -dit ging goed- Mijn HTML heb ik wat netter gemaakt en ik heb alle afbeeldingen toegevoegd. Grid is gelukt in het productenoverzicht op de homepage. Bronnen bewaard in de bronvermelding.
 
@@ -138,18 +129,7 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### voortgang 2 productpagina: 
 <img src="images/voortgang2product.png" width="375px" alt="productpagina door de war">
 
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - De tweede HTML pagina in CSS aanroepen door een class te gebruiken in de body van de productpagina (section:nth-of-type(2) {}). 
 - Menu elementen naast elkaar zetten met behulp van flexbox (kijken naar codepen oefeningen met responsive menuutjes). 
@@ -172,7 +152,6 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
 #### Spelen met een screenreader 
-Hier korte omschrijving (met indien nodig een afbeelding)
 
 <img src="images/screenreader.png" width="375px" alt="screenshot van de homepagina met een screenreader">
 
@@ -182,45 +161,35 @@ Met een screenreader krijg je minder snel een overzicht van wat er allemaal op d
 2. Ik heb gifs en icons op de homepage zijn die worden beschreven als een unlabelled image missing image description.
 3. De screenreader noemt op de productpage alle knoppen binnen de YouTube video speler op.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
 1. <html lang="nl"> moet naar het Engels verandert worden.
 2. Alt tekst toevoegen bij alle afbeeldingen of voor de minder belangrijke images die meer als decoratie dienen ervoor zorgen dat die images genegeerd worden door screenreaders.
 3. Andere video speler of die buttons/links disablen zodat ze niet opgesomd worden door de screenreader.
 
 #### Muis en toetsenbord
-Hier korte omschrijving (met indien nodig een afbeelding)
 
 <img src="images/tab.png" width="375px" alt="screenshot van de homepagina waar je doorheen kunt tabben">
 
 1. De homeknop wordt niet zichtbaar met een border tijdens het tabben.
 2. Heel andere interactie met de website: ieder klikbaar element krijgt een border eromheen zodat je visueel kan zien waar op de website je nu bent.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 #### Visuele beperking
-Hier korte omschrijving (met indien nodig een afbeelding)
 
-<img src="images/bril.jpg" width="375px" alt="testpersoon probeert de website te bedienen met een bril die je zicht beperkt">
+<img src="images/bril.JPG" width="375px" alt="testpersoon probeert de website te bedienen met een bril die je zicht beperkt">
 
 1. Diabetic eye disease: vlekjes door het scherm heen. Alles was nog goed leesbaar en de knopjes waren te vinden. Het kostte alleen wat meer moeite.
 2. Peripheral field loss: kost veel moeite om te concentreren op de content van de website. Je kan echt alleen in het midden van je field of view scherp zien.
 3. Blur: kopjes zijn leesbaar en de afbeeldingen zijn wel duidelijk. De knoppen zijn te onderscheiden maar de tekst in de knoppen zijn onduidelijk. Echter kan ik de paragraphs niet lezen omdat de letters te fijn zijn en verdwijnen in de achtergrond.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
 
 #### Concentratieprobleem
-Hier korte omschrijving (met indien nodig een afbeelding)
 
-<img src="images/ballon.jpg" width="375px" alt="persoon bedient website terwijl zij een ballon in de lucht houden">
+<img src="images/ballon.JPG" width="375px" alt="persoon bedient website terwijl zij een ballon in de lucht houden">
 
 Een form invullen tijdens het omhoog houden van een ballon is moeilijk. 
 1. De radio buttons zijn vrij klein, lastig eentje uit te kiezen.
 2. Het is lastig om iedere optie uit een select form te lezen en er eentje uit te selecteren. 
 3. Het typen ging heel langzaam omdat je maar 2 letters per keer kan intypen anders valt je ballon alweer op de grond.
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 </details>
 
@@ -234,8 +203,6 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
 -dit ging goed- Flexbox gebruikt om de menubar elementen naast elkaar te krijgen en het menu scrollt nu ook mee. De tweede pagina is ook bijna zo goed als af. 
 
 -dit was lastig- Passende states verzinnen en deze goed werkend laten maken. Verschillende soorten forms stylen. Beginnen aan de Javascript interactie.
@@ -246,24 +213,13 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### voortgang 3 productpagina: 
 <img src="images/voortgang3product.png" width="375px" alt="productpagina vrijwel af">
 
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Position zo min mogelijk gebruiken.
+- Radio buttons stylen zodat het meer bij de huisstijl past.
+- De website W3Schools gebruiken: scrollen door de verschillende elementen die je kunt aanpassen.
+- Website ziet er al uit als een professionele website, alleen is hij nog niet responsive, hij ziet er niet uit als je het scherm breder maakt.
+- Verschillende soorten content, goed gebruik gemaakt van allerlei forms.
 
 </details>
 
@@ -277,11 +233,27 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+-waar ik blij mee ben- 
+- Experimenteren met verschillende formulieren vond ik leuk en interessant om te doen, veel verschillende input types ontdekt.
+- Menubalk is goed gelukt: elementen naast elkaar gezet met flexbox en dat hij plakt aan de bovenkant tijdens het scrollen.
+
+-wat lastig was-
+- Beginnen met CSS: de juiste selectoren gebruiken en zo min mogelijk classes in de code zetten. Ik was bang dat mijn code daardoor slordig eruit zou zien.
+- Javascript.
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+### eindopracht homepagina: 
+<img src="images/finalhome.png" width="375px" alt="homepagina helemaal af">
+
+### eindopracht productpagina: 
+<img src="images/finalproduct.png" width="375px" alt="productpagina helemaal af">
+
+### eindopracht uitklapmenu:
+<img src="images/finalmenu.png" width="375px" alt="menu helemaal af">
+
+### eindopdracht darkmodus:
+<img src="images/finaldarkhome.png" width="375px" alt="hoofdpagina in dark modus">
 
 </details>
 
@@ -313,6 +285,8 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 15. bron 15 - h1 state met de hover underline: https://codepen.io/shooft/pen/yLOdLBg?editors=0100
 16. bron 16 - menu flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 17. bron 17 - icon naast heading: https://stackoverflow.com/questions/11701311/logo-image-and-h1-heading-on-the-same-line 
-18. bron 18 - uitklapbare hamburger menu https://codepen.io/jaclynck-the-typescripter/pen/VwMwVqX  
+18. bron 18 - uitklapbare hamburger menu: https://codepen.io/jaclynck-the-typescripter/pen/VwMwVqX  
+19. bron 19 - styling radio buttons: https://css-tricks.com/zero-trickery-custom-radios-and-checkboxes/ 
+20. bron 20 - light/dark mode: https://codepen.io/shooft/pen/ExXRLXL 
 
 </details>

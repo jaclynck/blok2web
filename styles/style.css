@@ -16,7 +16,23 @@
   --text-color: #2d2a24;
   --accent-color: #7d7a75;
 
+  --white-color:#fff;
   --button-color: #fff;
+}
+
+@media (prefers-color-scheme:dark) {
+  :root:not(.lightMode) {
+    /* dark theme */
+    --main-color: #015c47;
+    --green-background-color:#181C20;
+    --grey-background-color:  #282C30;
+    
+    --text-color:#D8DCE0;
+    --accent-color:#A8ACB0;
+
+    --white-color: #181C20;
+    --button-color: rgb(222, 222, 222);
+  }
 }
 
 /***********************************/
@@ -31,7 +47,8 @@ html {
 
 body {
   font-family: 'tenez', helvetica, arial, sans-serif;
-  color: var(--text-color);
+  color: var(--button-color);
+  background-color: var(--white-color);
   
   margin: 0;
   padding: 0;
@@ -42,11 +59,14 @@ body {
   grid-template-areas: 'header' 'section' 'footer';
 }
 
+
+
+
 /*********************/
 /* Header en banner */
 /*********************/
 
-body header {
+header {
   background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/files/greens-and-anthuriums_mobile_1278x.jpg?v=1617640574);
   background-size: cover;
     
@@ -58,6 +78,23 @@ body header {
   min-height: 30em;
 
   grid-area: header;
+}
+
+header h2 {
+  font-family: 'tenez', helvetica arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #2d2a24;
+  text-decoration: none;
+  font-size: 3rem;
+  line-height: 4rem; 
+
+  padding-left: 2rem;
+  max-width: 30rem;
+  margin-top: 8rem;
+  margin-bottom: 0;
+
+  padding-right: 2rem;
 }
 
 h2 {
@@ -76,6 +113,13 @@ h2 {
 
   padding-right: 2rem;
 }
+
+header p {
+    color: #2d2a24;
+}
+
+
+/* Call to action knop */
 
 a {
   text-decoration: none;
@@ -98,7 +142,7 @@ header section:nth-of-type(2) a {
   box-sizing: border-box;
 
   text-align:center;
-  font-family:'Tenez', helvetica, roboto, arial, sans-serif;
+  font-family:'Tenez', helvetica, arial, sans-serif;
   font: inherit;
   font-weight: normal;
 
@@ -117,6 +161,11 @@ header section:nth-of-type(2) a:hover {
 }
 
 header section:nth-of-type(2) a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px#e08f43;
+}
+
+header section:nth-of-type(2) a:active {
   background-color: lightseagreen;
   text-decoration: none;
   font-weight: bold;
@@ -130,7 +179,8 @@ header section p {
   padding-right: 2rem;
 }
 
-/* Menubalk */
+
+/* Menubalkje */
 
 nav {
   display: flex;
@@ -180,6 +230,11 @@ nav button:hover {
 }
 
 nav button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #e08f43;
+}
+
+nav button:active {
   background-color: var(--accent-color);
   color:var(--button-color);
   box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
@@ -201,7 +256,10 @@ nav button:first-of-type {
   z-index: 3;
 }
 
-/*******************/
+
+
+
+/******************************/
 /* lijst met links uitklappen */
 
 nav ul {
@@ -221,6 +279,8 @@ nav ul {
   transition: .5s;
 }
 
+/* class voor javascript: menu schuift het scherm in vanaf de zijkant*/
+
 nav.toonMenu ul {
   transition: .5s;
   transform: translateX(0);
@@ -237,8 +297,21 @@ nav a {
   font-size: 1.5rem;
 }
 
+/* de pagina waar je je nu bevindt is dikgedrukt in de menulijst*/
+
 nav a.active {
   font-weight: bold;
+}
+
+nav a:active, nav li:active {
+  background-color: var(--accent-color);
+  color: var(--button-color);
+  font-weight: bold;
+}
+
+nav a:focus, nav li:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px 3px #e08f43;
 }
 
 nav a:hover, nav li:hover {
@@ -247,7 +320,7 @@ nav a:hover, nav li:hover {
   font-weight: bold;
 }
 
-/* Logo */
+/* het logo in de menubalk */
 
 h1 a {
   font-family: 'Tenez', helvetica, arial, sans-serif;
@@ -292,6 +365,9 @@ h1 a:hover::before {
 h1 a:active {
   color: var(--green-background-color);
 }
+
+
+
 
 /**************************/
 /* DIT IS DE MAIN CONTENT */
@@ -354,6 +430,14 @@ main section:first-of-type a:hover {
   text-decoration: none;
 }
 
+main section:first-of-type a:focus {
+  font-weight: bold;
+}
+
+main section:first-of-type a:active {
+  font-weight: bold;
+}
+
 h3 {
   font-family: 'tenez', helvetica, arial, sans-serif;
   font-weight: 600;
@@ -364,11 +448,12 @@ h3 {
   margin: 0;
 }
 
+
 /* About the shop: to be human... */
 
 main section:last-of-type {
   padding-left: 2rem;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   padding-right: 2rem;
 }
 
@@ -386,6 +471,7 @@ main section:last-of-type h3 {
   padding-left: 0rem;
 }
 
+/* icoontjes naast de headings plaatsen*/
 main section:last-of-type img {
   width: 4rem;
   float: left;
@@ -395,7 +481,11 @@ main section:last-of-type img {
 main section:last-of-type p {
   margin-top: .5rem;
   margin-bottom: .5rem;
+  color: var(--text-color);
 }
+
+
+
 
 /*****************************/
 /* Footer met subscribe form */
@@ -412,6 +502,10 @@ footer {
 footer h2 {
   padding-left: 0rem;
   margin-top: 2rem;
+}
+
+footer p, footer label {
+  color: var(--text-color);
 }
 
 footer img {
@@ -437,7 +531,7 @@ footer input {
 
 footer input:hover {
   border: 3px solid var(--accent-color);
-  width: 100vw;
+  width: 100%;
 }
 
 footer input:focus {
@@ -482,15 +576,11 @@ footer button {
   font: inherit;
   font-weight: normal;
 
+  /* schaduw aan de buitenkant van de knop zodat deze 3D lijkt*/
   box-shadow: inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
   cursor:pointer;
 
   transition: .4s ease-in-out;
-}
-
-footer button:disabled {
-  background-color: var(--accent-color);
-  color:var(--button-color);
 }
 
 footer button:hover {
@@ -498,12 +588,19 @@ footer button:hover {
   width: 100%;
 }
 
-footer button:focus {
+footer button:active {
   background-color: lightseagreen;
   text-decoration: none;
+
+  /* schaduw aan de binnenkant alsof je de knop indrukt*/
   box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
   cursor:pointer;
   width: 100%;
+}
+
+footer button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px#e08f43;
 }
 
 /***************************************/
@@ -528,6 +625,7 @@ footer button:focus {
   padding-left: 0;
 }
 
+
 /* Formulieren */
 
 .product form {
@@ -541,6 +639,11 @@ footer button:focus {
   font-family: 'Tenez', helvetica, arial, sans-serif;
   
   margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.product form label {
+  color: var(--text-color);
 }
 
 .product form input {
@@ -584,6 +687,22 @@ footer button:focus {
   background-color: var(--green-background-color);
 }
 
+.product main form:nth-of-type(2) input[type="radio"] {
+  width: 1.2rem;
+  height: 1.2rem;
+
+  background-color: var(--green-background-color);
+  accent-color: var(--main-color);
+}
+
+.product main form:nth-of-type(3) input[type="radio"] {
+  width: 1.2rem;
+  height: 1.2rem;
+
+  background-color: var(--green-background-color);
+  accent-color: var(--main-color);
+}
+
 .product main button {
   background-color: var(--main-color);
   color: var(--button-color);
@@ -611,7 +730,7 @@ footer button:focus {
   width: 100%;
 }
 
-.product main button:focus {
+.product main button:active {
   background-color: lightseagreen;
   text-decoration: none;
   box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
@@ -619,6 +738,12 @@ footer button:focus {
   width: 100%;
 }
 
+.product main button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px#e08f43;
+}
+
+/* discount link */
 .product main section:first-of-type a {
   color: var(--main-color);
   font-weight: normal;
@@ -631,7 +756,23 @@ footer button:focus {
   padding-top: .5rem;
 }
 
-/* Details */
+.product main section:first-of-type a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.product main section:first-of-type a:active {
+  background-color: var(--green-background-color);
+}
+
+.product main section:first-of-type a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px#e08f43;
+}
+
+
+/* Details over de plant */
 
 .product main section:nth-of-type(2) {
   padding-top: 0rem;
@@ -662,11 +803,40 @@ footer button:focus {
   margin-bottom: .5rem;
 }
 
+.product main section:nth-of-type(2) p {
+  color: var(--text-color);
+}
+
+
 /* Toggle More Details */
 
 .product main section:nth-of-type(2) details {
   font-weight: bold;
   font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.product main section:nth-of-type(2) details a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  text-decoration: underline;
+
+  transition: .2s ease-in-out;
+}
+
+.product main section:nth-of-type(2) details a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.product main section:nth-of-type(2) details a:active {
+  background-color: var(--green-background-color);
+}
+
+.product main section:nth-of-type(2) details a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px#e08f43;
 }
 
 .product main section:nth-of-type(2) li {
@@ -675,6 +845,7 @@ footer button:focus {
   font-weight: normal;
   font-size: 1.1rem;
 }
+
 
 /* You Might Like these other products */
 
@@ -713,7 +884,14 @@ footer button:focus {
 .product main section:nth-of-type(3) a:hover {
   cursor: pointer;
   text-decoration: none;
-  
+}
+
+.product main section:nth-of-type(3) a:focus {
+  font-weight: bold;
+}
+
+.product main section:nth-of-type(3) a:active {
+  font-weight: bold;
 }
 
 .product main {
@@ -734,23 +912,25 @@ footer button:focus {
   font-size: 2.5rem;
 }
 
+/* Video instructies */
 
-/*
-.product p {
-  font-size: 1.2rem;
-}*/
-
-/* Video */
+.product main section:nth-of-type(4) h2 {
+  margin-top: 2rem;
+}
 
 .product iframe {
   width: 100%;
   height: 20rem;
 }
 
-/* Plant Bio */
+/* Plant Bio uitleg */
 
 .product main section:nth-of-type(5) h2 {
   margin-top: 2rem;
+}
+
+.product main section:nth-of-type(5) p {
+    color: var(--text-color);
 }
 
 .product main section:nth-of-type(5) a {
@@ -784,9 +964,20 @@ footer button:focus {
   border: 3px solid var(--text-color);
   border-radius:.5rem;
 
+  font-weight: bold;
 }
 
-/* Blog */
+.product main section:nth-of-type(5) a:active {
+  background: var(--accent-color);
+  color:var(--button-color);
+}
+
+.product main section:nth-of-type(5) a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px#e08f43;
+}
+
+/* Blog artikelen overzicht */
 
 .product main section:last-of-type {
   padding: 0rem;
