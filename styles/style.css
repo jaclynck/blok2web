@@ -21,7 +21,7 @@
 }
 
 @media (prefers-color-scheme:dark) {
-  :root:not(.lightMode) {
+  :root {
     /* dark theme */
     --main-color: #015c47;
     --green-background-color:#181C20;
@@ -61,13 +61,12 @@ body {
 
 
 
-
 /*********************/
 /* Header en banner */
 /*********************/
 
 header {
-  background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/files/greens-and-anthuriums_mobile_1278x.jpg?v=1617640574);
+  background-image: url('https://cdn.shopify.com/s/files/1/0150/6262/files/greens-and-anthuriums_mobile_1278x.jpg?v=1617640574');
   background-size: cover;
     
   margin: 0;
@@ -81,24 +80,20 @@ header {
 }
 
 header h2 {
-  font-family: 'tenez', helvetica arial, sans-serif;
   font-weight: bold;
   font-style: normal;
-  color: #2d2a24;
+  color: #2d2a24; /* geen var door de dark mode */
   text-decoration: none;
   font-size: 3rem;
   line-height: 4rem; 
-
-  padding-left: 2rem;
+  
+  padding: 0 2rem;
   max-width: 30rem;
   margin-top: 8rem;
   margin-bottom: 0;
-
-  padding-right: 2rem;
 }
 
 h2 {
-  font-family: 'tenez', helvetica arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: var(--text-color);
@@ -115,7 +110,7 @@ h2 {
 }
 
 header p {
-    color: #2d2a24;
+    color: #2d2a24; /* geen var door de dark mode */
 }
 
 
@@ -142,12 +137,10 @@ header section:nth-of-type(2) a {
   box-sizing: border-box;
 
   text-align:center;
-  font-family:'Tenez', helvetica, arial, sans-serif;
   font: inherit;
   font-weight: normal;
 
   box-shadow:inset 0 -.6rem 0 -.4rem rgba(0,0,0,0.17);
-  cursor:pointer;
 
   transition: .4s ease-in-out;
 }
@@ -155,18 +148,17 @@ header section:nth-of-type(2) a {
 header section:nth-of-type(2) a:hover {
   text-decoration: none;
   font-weight: bold;
-  border-radius:5rem;
-
-  transition: .4s ease-in-out;
+  border-radius: 5rem;
 }
 
 header section:nth-of-type(2) a:focus {
   outline: none;
-  box-shadow: 0 0 0 3px#e08f43;
+  border: 3px solid #e08f43;
+  border-radius: 3px;
 }
 
 header section:nth-of-type(2) a:active {
-  background-color: lightseagreen;
+  background-color: #20b2aa;
   text-decoration: none;
   font-weight: bold;
   box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
@@ -185,18 +177,15 @@ header section p {
 nav {
   display: flex;
   margin-bottom: 0;
-
   height: 4.5rem;
-
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--main-color);
-
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 3;
+  z-index: 3; /* 999 index */
 }
 
 nav button {
@@ -209,11 +198,10 @@ nav button {
   display:inline-block;
   position:relative;
   border: none;
-  border-radius:.3rem;
+  border-radius: .3rem;
   box-sizing: border-box;
 
   text-align: center;
-  font-family: 'Tenez', helvetica, arial, sans-serif;
   font: inherit;
   font-weight:bold;
   text-align: center;
@@ -231,7 +219,8 @@ nav button:hover {
 
 nav button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px #e08f43;
+  border: 3px solid #e08f43;
+  border-radius: 3px; 
 }
 
 nav button:active {
@@ -258,13 +247,13 @@ nav button:first-of-type {
 
 
 
-
 /******************************/
 /* lijst met links uitklappen */
+/******************************/
 
 nav ul {
   margin: 0;
-  padding: 4em 0 0;
+  padding: 4em 0;
   background: var(--green-background-color);
   list-style: none;
 
@@ -311,7 +300,8 @@ nav a:active, nav li:active {
 
 nav a:focus, nav li:focus {
   outline: none;
-  box-shadow: 0 0 0 3px 3px #e08f43;
+  border: 3px solid #e08f43;
+  border-radius: 3px; 
 }
 
 nav a:hover, nav li:hover {
@@ -323,7 +313,6 @@ nav a:hover, nav li:hover {
 /* het logo in de menubalk */
 
 h1 a {
-  font-family: 'Tenez', helvetica, arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 1.8rem;
@@ -345,7 +334,7 @@ h1 a {
 h1 a::before {
   content: "";
   position: absolute;
-  background-color:currentColor;
+  background-color:#fff;
 
   left:.125rem;
   right:.1rem;
@@ -439,7 +428,6 @@ main section:first-of-type a:active {
 }
 
 h3 {
-  font-family: 'tenez', helvetica, arial, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 2.5rem;
@@ -452,9 +440,8 @@ h3 {
 /* About the shop: to be human... */
 
 main section:last-of-type {
-  padding-left: 2rem;
   margin-bottom: 2rem;
-  padding-right: 2rem;
+  padding: 0 2rem;
 }
 
 main section:last-of-type h2 {
@@ -472,6 +459,7 @@ main section:last-of-type h3 {
 }
 
 /* icoontjes naast de headings plaatsen*/
+
 main section:last-of-type img {
   width: 4rem;
   float: left;
@@ -536,15 +524,17 @@ footer input:hover {
 
 footer input:focus {
   background-color: var(--green-background-color);
+  color: var(--text-color);
   border: 4px solid var(--main-color);
   width: 100%;
+  outline: none;
 }
 
 footer form label {
   font-weight: bold;
 }
 
-footer form input[type=button], input[type=submit] {
+footer form input[type=submit] {
   background-color: var(--main-color);
   border: none;
   color: var(--button-color);
@@ -572,7 +562,6 @@ footer button {
   box-sizing: border-box;
 
   text-align: center;
-  font-family:'Tenez', helvetica, arial, sans-serif;
   font: inherit;
   font-weight: normal;
 
@@ -589,12 +578,12 @@ footer button:hover {
 }
 
 footer button:active {
-  background-color: lightseagreen;
+  background-color: #20b2aa;
   text-decoration: none;
 
   /* schaduw aan de binnenkant alsof je de knop indrukt*/
   box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
-  cursor:pointer;
+  cursor: pointer;
   width: 100%;
 }
 
@@ -610,7 +599,7 @@ footer button:focus {
 /* Product foto's */
 
 .product header {
-  background-image: url(https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_monstera_variant_medium_grant_black_587b36b4-4304-47f4-924e-b0bb4dfb0090_1024x.jpg?v=1611287458);
+  background-image: url('https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_monstera_variant_medium_grant_black_587b36b4-4304-47f4-924e-b0bb4dfb0090_1024x.jpg?v=1611287458');
   background-size: cover;
   background-repeat: no-repeat;
     
@@ -649,7 +638,6 @@ footer button:focus {
 .product form input {
   font-size: 1rem;
   font-weight: normal;
-  font-family: 'Tenez', helvetica, arial, sans-serif;
 }
 
 .product select {
@@ -693,6 +681,8 @@ footer button:focus {
 
   background-color: var(--green-background-color);
   accent-color: var(--main-color);
+
+  cursor: pointer;
 }
 
 .product main form:nth-of-type(3) input[type="radio"] {
@@ -701,6 +691,12 @@ footer button:focus {
 
   background-color: var(--green-background-color);
   accent-color: var(--main-color);
+
+  cursor: pointer;
+}
+
+.product main input[type="color"] {
+  cursor: pointer;
 }
 
 .product main button {
@@ -731,7 +727,7 @@ footer button:focus {
 }
 
 .product main button:active {
-  background-color: lightseagreen;
+  background-color: #20b2aa;
   text-decoration: none;
   box-shadow: inset 0 .2rem 0 .2rem rgba(0,0,0,0.17);
   cursor:pointer;
@@ -744,6 +740,7 @@ footer button:focus {
 }
 
 /* discount link */
+
 .product main section:first-of-type a {
   color: var(--main-color);
   font-weight: normal;
@@ -816,6 +813,22 @@ footer button:focus {
   color: var(--text-color);
 }
 
+.product main section:nth-of-type(2) details summary:hover {
+  user-select: none;
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.product main section:nth-of-type(2) details summary:active {
+  background-color: var(--grey-background-color);
+}
+
+.product main section:nth-of-type(2) details summary:focus {
+  outline: none;
+  border: 3px solid #e08f43;
+  border-radius: 3px;
+}
+
 .product main section:nth-of-type(2) details a {
   color: var(--text-color);
   font-size: 1.1rem;
@@ -836,7 +849,8 @@ footer button:focus {
 
 .product main section:nth-of-type(2) details a:focus {
   outline: none;
-  box-shadow: 0 0 0 3px#e08f43;
+  border: 3px solid #e08f43;
+  border-radius: 3px;
 }
 
 .product main section:nth-of-type(2) li {
@@ -895,7 +909,7 @@ footer button:focus {
 }
 
 .product main {
-  padding: 0 2rem 0 2rem;
+  padding: 0 2rem;
 }
 
 .product h3 {
@@ -949,10 +963,7 @@ footer button:focus {
   box-sizing: border-box;
 
   text-align: center;
-  font-family:'Tenez', helvetica, arial, sans-serif;
   font: inherit;
-
-  cursor:pointer;
 
   transition: .2s;
 }
@@ -1001,7 +1012,6 @@ footer button:focus {
 }
 
 .product main section:last-of-type h3 {
-  font-family: 'tenez', helvetica, arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: var(--text-color);
@@ -1009,7 +1019,7 @@ footer button:focus {
   font-size: 1.5rem;
   line-height: 2rem; 
 
-  max-width: 50rem;
+  /* max-width: 50rem; */
   margin-top: 1rem;
   margin-bottom: 0;
 }
@@ -1019,5 +1029,4 @@ footer button:focus {
   text-decoration: none;
   font-size: 1rem;
   line-height: 1rem; 
-  
 } 
